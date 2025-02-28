@@ -4,19 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD231</title>
-  <meta name="description" content="a web for this course">
+  <meta name="description" content="a website for this course, designed to show my course work and a brief description about me">
   <meta name="author" content="Joseph Almeria">
   <link rel="stylesheet" href="styles/normalize.css">
-  <script src="scripts/filename" defer></script>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Page Title - Heading 1</h1>
-    <nav></nav>
-  </header>
-  <main>
-    
-  </main>
-  <footer>©Joseph Almeria | BYU-Idaho | WDD 131 - 2025</footer>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1>
+          <img src="images/profile.jpg" alt="profile image"> Joseph Almeria
+        </h1>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="https://www.linkedin.com/in/joseph-almeria-0380b125a/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/3?lang=eng&id=p17#p17"
+              >Scripture</a
+            >
+          </li>
+          <li><a href="https://jdalmeria-tech.github.io/wdd131/project/index.html">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- <h1>Home</h1> -->
+      <section class="card">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <div class="content-first">
+            <p>
+              Hi everyone! My name is Joseph Almeria and I'm a <span class="multiple-text"></span>.
+              <br>
+              <br>
+              I'm passionate about learning new things and always
+              strive for personal growth. I love to play the guitar and jam
+              with my cousins. When I'm not making music, you’ll find me
+              diving into books that boost my self-improvement, dreaming big,
+              and thinking positively. I also enjoy keeping my body fit by combining
+              weightlifting and bodyweight exercises. I hope to become a web
+              and software developer, working remotely! I'm excited to learn more about web development and create amazing projects.
+            </p>
+          </div>
+          <div class="content-second">
+            <h3>Cebu, Philippines</h3>
+            <div class="content-body">
+              <figure>
+                <img src="images/cebu.jpg" alt="CCLEX bridge to Cebu City">
+                <figcaption>CCLEX bridge to Cebu City</figcaption>
+              </figure>
+              <p>
+                Nestled in the heart of the Philippines, Cebu City is a vibrant metropolis blending rich historical heritage and modern urban energy.
+                Known as the "Queen City of the South," it's famous for its stunning beaches, dynamic festivals, and bustling markets.
+                The city is home to the iconic Magellan's Cross, a symbol of the arrival of Christianity in the Philippines.
+                Whether you're a history buff, a foodie, an adventure seeker, or simply looking to relax on pristine beaches, Cebu has something for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="resources">
+          <h2>Web Resources</h2>
+          <div class="resource-content">
+            <ul>
+              <li><a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a></li>
+              <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+              <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+              <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+              <li><a href="https://www.youtube.com/@lundeveloper" target="_blank">Lun Dev Code</a></li>
+              <li><a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a></li>
+              <li><a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">SuperSimpleDev</a></li>
+              <li><a href="https://www.youtube.com/@KevinPowell" target="_blank"> Kevin Powell</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>©<span id="currentyear"></span> 🧙🏼‍♂️Joseph Almeria 🧙🏼‍♂️ Philippines</p>
+      <p><span id="lastModified"></span></p>
+    </footer>
+  </div>
 </body>
 </html>
