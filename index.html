@@ -21,87 +21,84 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <div class="header-content">
-        <h1>
-          <img src="images/profile.jpg" alt="profile image"> Joseph Almeria
-        </h1>
+    <!-- Header -->
+    <header>
+      <div class="profile">
+        <img src="images/profile.webp" alt="Profile Photo">
+        <h1>Joseph A. Almeria</h1>
       </div>
-      <nav>
-        <ul class="navigation">
-          <li>
-            <a href="https://www.linkedin.com/in/joseph-almeria-0380b125a/"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-          <li>
-            <a
-              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/3?lang=eng&id=p17#p17"
-              >Scripture</a
-            >
-          </li>
-          <li><a href="https://jdalmeria-tech.github.io/wdd131/project/index.html">Final Project</a></li>
-        </ul>
-      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
     </header>
 
-    <main class="main">
-      <!-- <h1>Home</h1> -->
-      <section class="card">
-        <div class="about-me">
-          <h2>Course Work</h2>
-          <div class="content-first">
-            <p>
-              Hi everyone! My name is Joseph Almeria and I'm a <span class="multiple-text"></span>.
-              <br>
-              <br>
-              I'm passionate about learning new things and always
-              strive for personal growth. I love to play the guitar and jam
-              with my cousins. When I'm not making music, you’ll find me
-              diving into books that boost my self-improvement, dreaming big,
-              and thinking positively. I also enjoy keeping my body fit by combining
-              weightlifting and bodyweight exercises. I hope to become a web
-              and software developer, working remotely! I'm excited to learn more about web development and create amazing projects.
-            </p>
+    <!-- Main Navigation -->
+    <nav id="mainNav" class="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chamber">Chamber</a></li>
+        <li><a href="#github">GitHub Profile</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobileNav" class="mobile-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chamber">Chamber</a></li>
+        <li><a href="#github">GitHub Profile</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        
+        <div class="content-grid">
+          <!-- Course Work -->
+          <div class="card">
+            <div class="card-header">Course Work</div>
+            <div class="card-body">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </div>
-          <div class="content-second">
-            <h3>Cebu, Philippines</h3>
-            <div class="content-body">
-              <figure>
-                <img src="images/cebu.jpg" alt="CCLEX bridge to Cebu City">
-                <figcaption>CCLEX bridge to Cebu City</figcaption>
-              </figure>
-              <p>
-                Nestled in the heart of the Philippines, Cebu City is a vibrant metropolis blending rich historical heritage and modern urban energy.
-                Known as the "Queen City of the South," it's famous for its stunning beaches, dynamic festivals, and bustling markets.
-                The city is home to the iconic Magellan's Cross, a symbol of the arrival of Christianity in the Philippines.
-                Whether you're a history buff, a foodie, an adventure seeker, or simply looking to relax on pristine beaches, Cebu has something for everyone.
-              </p>
+          
+          <!-- Cebu, Philippines -->
+          <div class="card">
+            <div class="card-header">Cebu, Philippines</div>
+            <div class="card-body center">
+              <img src="images/cebu.webp" alt="CCLEX Bridge in Cebu">
+              <p class="caption">CCLEX Bridge in Cebu</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="card">
-        <div class="resources">
-          <h2>Cebu, Philippines</h2>
-          <div class="resource-content">
-            <ul>
-              <li><a href="https://www.freecodecamp.org/learn/" target="_blank">freeCodeCamp</a></li>
-              <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
-              <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
-              <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-              <li><a href="https://www.youtube.com/@lundeveloper" target="_blank">Lun Dev Code</a></li>
-              <li><a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a></li>
-              <li><a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">SuperSimpleDev</a></li>
-              <li><a href="https://www.youtube.com/@KevinPowell" target="_blank"> Kevin Powell</a></li>
-            </ul>
+        
+        <!-- Certificate Section -->
+        <div class="card full-width">
+          <div class="card-header">Web and Computer Programming Certificate</div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cse">CSE</button>
+            <button class="filter-btn" data-filter="wdd">WDD</button>
+          </div>
+          <div class="courses-grid">
+            <div class="course completed" data-type="cse">CSE 110</div>
+            <div class="course completed" data-type="wdd">WDD 130</div>
+            <div class="course completed" data-type="cse">CSE 111</div>
+            <div class="course" data-type="cse">CSE 210</div>
+            <div class="course completed" data-type="wdd">WDD 131</div>
+            <div class="course" data-type="wdd">WDD 231</div>
           </div>
         </div>
       </section>
     </main>
-
+    
+    <!-- Footer -->
     <footer class="footer">
       <p>©<span id="currentyear"></span> 🧙🏼‍♂️Joseph Almeria 🧙🏼‍♂️ Philippines</p>
       <p><span id="lastModified"></span></p>

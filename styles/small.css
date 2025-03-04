@@ -1,0 +1,22 @@
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .main-nav {
+    display: none;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mobile-nav.active {
+    display: block;
+  }
+}

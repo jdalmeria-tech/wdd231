@@ -1,207 +1,229 @@
-:root {
-  --main-color: #f1efed;
-  --secondary-color: #d8c9bd;
-  --accent-color: #003a57;
-  --text-color: #3d3d3d;
-}
-
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: "Poppins", serif;
-  font-weight: 400;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main-color);
-}
-
-h1 {
-  font-weight: 500;
-  text-align: center;
-  margin-top: 1rem;
+  line-height: 1.6;
 }
 
 .container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  flex: 1;
-}
-
-/* Header Section */
-.header {
-  grid-area: header;
-  background-color: var(--accent-color);
-  color: var(--main-color);
-  margin-bottom: 1.2rem; ;
-}
-
-nav {
-  grid-area: header;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  padding: .8rem;
-  margin-top: 2rem;
-}
-
-.navigation {
-  list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.navigation a {
-  display: block;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 550;
-}
-
-.navigation a:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  text-underline-offset: 8px;
-}
-
-/* Main Section */
-main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr .4fr;
-  gap: 1rem;
-}
-
-/* Card section */
-.card {
-  background-color: var(--main-color);
-  color: var(--text-color);
+/* Header Styles */
+header {
+  background-color: #1a4e6e;
+  color: white;
   padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 2%;
-}
-
-.card h2 {
-  text-align: center;
-  background-color: var(--accent-color);
-  color: var(--main-color);
-  font-weight: 500;
-  padding: .5rem;
-}
-
-/* About Me section  */
-
-.content-first {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  justify-content: center;
 }
 
-.multiple-text {
-  color: var(--accent-color);
+.profile {
+  display: flex;
+  align-items: center;
 }
 
-.content-first p {
-  flex: 1;
+.profile img {
+  width: 120px;
+  border-radius: 4px;
+  object-fit: cover;
   margin-right: 1rem;
 }
 
-.content-first img {
-  max-width: 150px;
-  height: auto;
+.profile h1 {
+  font-size: 1.5rem;
 }
 
-.content-second {
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.main-nav {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.main-nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-nav li {
+  margin-right: 3rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: #1a4e6e;
+}
+
+.mobile-nav ul {
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  background-color: #15384f;
+}
+
+/* Main Content Styles */
+main {
+  flex-grow: 1;
   padding: 1rem;
-}
-
-.content-second h3 {
-  color: var(--accent-color);
-  text-align: center;
-  width: 50%;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid var(--accent-color);
-  padding-bottom: 0.8rem; 
-}
-
-.content-second .content-body {
-  display: flex;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
-.content-second img {
-  max-width: 210px;
-  height: auto;
-  margin-right: 1.5rem;
+h2 {
+  color: #1a4e6e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-.content-second p {
-  flex: 1;
-  text-align: left;
-  margin-top: 1rem;
+content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.content-second figcaption {
-  font-style: italic;
-  font-size: small;
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-/* Web Resources Section  */
+.full-width {
+  grid-column: 1 / -1;
+}
 
-.resource-content {
+.card-header {
+  background-color: #1a4e6e;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.card-body.center {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
-  padding: 1rem;
 }
 
-.resource-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.card-body img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
-.resource-content a {
-  color: var(--accent-color);
-  font-weight: 650;
-}
-
-.resource-content li {
-  margin: 1.6rem;
-}
-
-/* Footer Section */
-footer {
-  grid-area: footer;
-  margin-top: 1rem;
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
+.caption {
+  font-size: 0.875rem;
   text-align: center;
-  padding: 1.5rem;
+}
+
+.card-body ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background-color: #f0f0f0;
+}
+
+.filter-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #333;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.course {
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.course.completed {
+  background-color: #6b3524;
+  color: white;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1a4e6e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.flag {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.update-time {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 }
 
