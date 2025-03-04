@@ -2,7 +2,7 @@
 :root {
   --primary-color: #1a4e6e;
   --secondary-color: black;
-  --text-color: white;
+  --text-color: #e8e8e8;
   --accent-color: rgb(241, 241, 32);
 }
 
@@ -121,6 +121,7 @@ header {
 
 .mobile-nav a:hover {
   background-color: #15384f;
+  color: var(--accent-color)
 }
 
 /* Main Content Styles */
