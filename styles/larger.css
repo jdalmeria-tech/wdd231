@@ -67,6 +67,10 @@ header {
   text-align: center;
 }
 
+.active {
+  color: var(--accent-color);
+}
+
 .main-nav ul {
   display: flex;
   justify-content: center;

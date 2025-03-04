@@ -2,6 +2,12 @@
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    flex: 0;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
   }
   
   .main-nav {
@@ -18,5 +24,14 @@
   
   .mobile-nav.active {
     display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile {
+    flex: 1;
   }
 }
