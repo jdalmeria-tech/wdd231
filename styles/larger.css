@@ -139,7 +139,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-content-grid {
+.content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -244,5 +244,59 @@ footer {
 
 #lastModified {
   color: var(--accent-color);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    flex: 0;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .menu-toggle::before {
+    content: '☰';
+  }
+
+  .menu-toggle.active::before {
+    content: '✖';
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-nav.active {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .profile {
+    flex: 1;
+  }
+
+  .profile span {
+    font-size: .05rem;
+  }
 }
 
