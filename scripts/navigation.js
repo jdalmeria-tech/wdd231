@@ -4,5 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuToggle.addEventListener('click', () => {
     mobileNav.classList.toggle('active');
+    menuToggle.classList.toggle('active');
   });
 });

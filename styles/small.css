@@ -8,20 +8,30 @@
     padding: 0.5rem;
     border: none;
     cursor: pointer;
+    position: absolute;
+    right: 1rem;
   }
-  
+
+  .menu-toggle::before {
+    content: '☰';
+  }
+
+  .menu-toggle.active::before {
+    content: '✖';
+  }
+
   .main-nav {
     display: none;
   }
-  
+
   .content-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .courses-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .mobile-nav.active {
     display: block;
   }
@@ -30,7 +40,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
+
   .profile {
     flex: 1;
   }
