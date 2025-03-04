@@ -46,4 +46,8 @@
   .profile {
     flex: 1;
   }
+
+  .profile span {
+    font-size: .1rem;
+  }
 }
