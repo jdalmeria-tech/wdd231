@@ -143,6 +143,7 @@ h2 {
   text-align: center;
   font-weight: bold;
 }
+
 .card-header h2 {
   color: var(--text-color);
   font-size: 1.2rem;
@@ -206,6 +207,7 @@ h2 {
   padding: 0.5rem;
 }
 
+/* Course Styles */
 .course {
   padding: 0.5rem;
   text-align: center;
