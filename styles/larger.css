@@ -47,9 +47,10 @@ header {
   margin-right: 1rem;
 }
 
-.profile h2 {
+.profile span {
   font-size: 1.5rem;
   color: var(--text-color);
+  font-family: "Poppins", serif;
 }
 
 .menu-toggle {
