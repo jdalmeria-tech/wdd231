@@ -1,0 +1,33 @@
+{
+  "familyName": "Artajo",
+  "dateMoved": "5-December-2024",
+  "numOfPeople": 5,
+  "wasVisited": true,
+  "familyMembers": [
+    {
+      "name": "Ernesto Artajo",
+      "gender": "M",
+      "birthdate": "07-Jun-1995"
+    },
+    {
+      "name": "Cathlyn Artajo",
+      "gender": "F",
+      "birthdate": "23-October-1996"
+    },
+    {
+      "name": "Troy Nacar",
+      "gender": "M",
+      "birthdate": "06-April-2000"
+    },
+    {
+      "name": "Andre Ramirez",
+      "gender": "M",
+      "birthdate": "05-January-2000"
+    },
+    {
+      "name": "Shane Dapar",
+      "gender": "F",
+      "birthdate": "08-September-2002"
+    }
+  ]
+}
