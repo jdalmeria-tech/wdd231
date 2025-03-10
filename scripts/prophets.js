@@ -21,7 +21,7 @@ const displayProphets = (prophets) => {
   fullName.textContent = `${prophet.name} ${prophet.lastname}`;
   // build the image portrait by setting the relevant attributes
   portrait.setAttribute('src', prophet.imageurl);
-  portrait.setAttribute('alt',`Portrait of ${prophet.name} ${prophet.lastname} - ${index + 1} Latter-day President`);
+  portrait.setAttribute('alt',`Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order} Latter-day President`);
   portrait.setAttribute('loading', 'lazy');
   portrait.setAttribute('width','340');
   portrait.setAttribute('height','440');
