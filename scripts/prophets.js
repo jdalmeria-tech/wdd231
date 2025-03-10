@@ -68,7 +68,7 @@ const displayProphets = (prophets) => {
   date.innerHTML = `<span class="label">Birth:</span> ${prophet.birthdate}`;
   place.innerHTML = `<span class="label">Place:</span> ${prophet.birthplace}`;
   num.innerHTML = `<span class="label">Children:</span> ${prophet.numofchildren}`;
-  length.innerHTML = `<span class="label">Years as a Prophet:</span> ${prophet.length}`;
+  length.innerHTML = `<span class="label">Years of Service:</span> ${prophet.length}`;
   death.innerHTML = `<span class="label">Death:</span> ${prophet.death}`;
   ageDeath.innerHTML = `<span class="label">Age:</span> ${getAgeAtDeathInYears(
     prophet.birthdate,
