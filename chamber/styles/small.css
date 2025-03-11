@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #8093e9;
+  --secondary-color: #acb8f0;
+  --bg-color: #ffffff;
+  --txt-color: #1a1a1a;
+}
+
+/* Base styles for small screens */
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: left;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  color: var(--txt-color);
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+}
