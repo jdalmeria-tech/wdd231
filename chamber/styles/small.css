@@ -65,12 +65,12 @@ ul.menuLinks li a {
 }
 
 ul li.current-menu-item a {
-  color: rgba(255, 255, 0, 0.925);
+  color: #ffd000;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 ul.menuLinks.open li a:hover {
-  color: rgba(255, 255, 0, 0.925);
+  color: #ffd000;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
