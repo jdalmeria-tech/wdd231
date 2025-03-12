@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Sephaya Accessories",
+    "address": "123 Main St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 123 4567",
+    "webURL": "https://www.sephaya.com",
+    "img": "sephaya.png",
+    "membershipLvl": 3,
+    "isActive": true
+  },
+  {
+    "name": "Nena's Delicacies",
+    "address": "456 Elm St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 234 5678",
+    "webURL": "https://www.nenadelicacies.com",
+    "img": "greensolutions.png",
+    "membershipLvl": 3,
+    "isActive": true
+  },
+  {
+    "name": "Future Enterprises",
+    "address": "789 Oak St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 345 6789",
+    "webURL": "https://www.futureenterprises.com",
+    "img": "futureenterprises.png",
+    "membershipLvl": 1,
+    "isActive": false
+  },
+  {
+    "name": "EcoTech Corp.",
+    "address": "101 Pine St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 456 7890",
+    "webURL": "https://www.ecotechcorp.com",
+    "img": "ecotechcorp.png",
+    "membershipLvl": 1,
+    "isActive": true
+  },
+  {
+    "name": "Smart Solutions LLC",
+    "address": "202 Maple St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 567 8901",
+    "webURL": "https://www.smartsolutions.com",
+    "img": "smartsolutions.png",
+    "membershipLvl": 2,
+    "isActive": false
+  },
+  {
+    "name": "Innovative Designs",
+    "address": "303 Birch St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 678 9012",
+    "webURL": "https://www.innovativedesigns.com",
+    "img": "innovativedesigns.png",
+    "membershipLvl": 3,
+    "isActive": true
+  },
+  {
+    "name": "Bright Future Enterprises",
+    "address": "404 Cedar St, Talamban, Cebu City",
+    "phoneNum": "(+63)927 789 0123",
+    "webURL": "https://www.brightfuture.com",
+    "img": "brightfuture.png",
+    "membershipLvl": 2,
+    "isActive": true
+  }
+]
