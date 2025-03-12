@@ -43,7 +43,7 @@ nav {
 }
 
 #myButton::before {
-  /* content: "="; */
+  content: "\2630";
 }
 
 #myButton {
@@ -80,9 +80,9 @@ ul.menuLinks {
 }
 
 /* CSS for the open class */
-/* #myButton.open::before {
+#myButton.open::before {
   content:"X";
-} */
+}
 
 ul.menuLinks.open {
   display: block;
