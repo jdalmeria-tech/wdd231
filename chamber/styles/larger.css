@@ -1,15 +1,20 @@
-@media (min-width: 768px) {
+@media only screen and (min-width: 38rem) {
   /* Styles for larger screens */
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
+
+  header span {
+    font-size: 1rem;
   }
 
-  nav ul li {
-    margin: 0 1rem;
+  #myButton {
+    display: none;
   }
 
-  header {
-    padding: 2rem;
+  ul.menuLinks, ul.menuLinks.open {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul.menuLinks a:hover {
+    color: rgba(255, 255, 0, 0.925);
   }
 }

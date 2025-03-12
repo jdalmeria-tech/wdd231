@@ -10,8 +10,8 @@
 }
 
 :root {
-  --primary-color: #8093e9;
-  --secondary-color: #acb8f0;
+  --primary-color: #acb8f0;
+  --secondary-color: #8093e9;
   --bg-color: #ffffff;
   --txt-color: #1d1b1bd3;
 }
@@ -31,7 +31,7 @@ header {
 }
 
 header span {
-  color: var(--bg-color);
+  color: var(--txt-color);
   font-size: .8rem;
   font-weight: 500;
 }
@@ -64,7 +64,13 @@ ul.menuLinks li a {
   text-decoration: none;
 }
 
-li.current-menu-item a {
+ul li.current-menu-item a {
+  color: rgba(255, 255, 0, 0.925);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.menuLinks.open li a:hover {
+  color: rgba(255, 255, 0, 0.925);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
