@@ -1,6 +1,7 @@
 @media only screen and (min-width: 38rem) {
   /* Styles for larger screens */
 
+  /* header section and nav */
   header span {
     font-size: 1.5rem;
   }
@@ -20,5 +21,21 @@
 
   nav {
     grid-template-rows: 1fr;
+  }
+
+  /* footer section */
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: .1rem 2.5rem .8rem 2.5rem;
+  }
+
+  .footer-content {
+    margin: 0;
+  }
+
+  .footer-content ul {
+    justify-content: center;
   }
 }

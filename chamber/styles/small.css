@@ -39,7 +39,7 @@ header {
 header span {
   color: var(--txt-color);
   font-size: .85rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* navigation */
@@ -110,9 +110,45 @@ h1 {
 }
 
 
+/* footer */
 
 footer {
   background-color: var(--primary-color);
-  padding: 1rem;
-  text-align: center;
+  padding: .5rem;
+}
+
+/* Base styles for small screens */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: left;
+  font-size: .8rem;
+}
+
+.footer-content {
+  width: 100%; /* Ensure full width for alignment */
+}
+
+.footer-content ul {
+  display: flex;
+  justify-content: center; /* Center list items */
+  list-style: none;
+  padding: 0;
+  margin: .5rem;
+  font-size: 2.5rem;
+}
+
+.footer-content ul a {
+  color: var(--txt-color);
+  margin: .2rem;
+  
+}
+
+.footer-content ul a:hover {
+  color:black;
+}
+
+.footer-content li {
+  margin: 0 0.5rem;
 }
