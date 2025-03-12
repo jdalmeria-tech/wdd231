@@ -17,4 +17,8 @@
   ul.menuLinks a:hover {
     color: #ffd000;
   }
+
+  nav {
+    grid-template-rows: 1fr;
+  }
 }
