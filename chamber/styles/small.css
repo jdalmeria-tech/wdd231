@@ -75,7 +75,7 @@ ul li.current-menu-item a {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-ul.menuLinks.open li a:hover {
+#animateMe.open li a:hover {
   color: #ffd000;
   background-color: rgba(0, 0, 0, 0.2);
 }
