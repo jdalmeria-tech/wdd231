@@ -30,9 +30,15 @@ header {
   text-align: left;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 44px auto 44px;
+  align-items: center;
+}
+
 header span {
   color: var(--txt-color);
-  font-size: .8rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -50,7 +56,7 @@ nav {
   font-size: 2.2rem;
   background: none;
   border: none;
-  color: var(--bg-color);
+  color: var(--txt-color);
   cursor: pointer;
   width: 100%;
   text-align: right;
@@ -86,6 +92,12 @@ ul.menuLinks {
 
 ul.menuLinks.open {
   display: block;
+}
+
+/* main */
+
+h1 {
+  font-size: 1.5rem;
 }
 
 
