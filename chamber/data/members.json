@@ -4,7 +4,7 @@
     "address": "123 Main St, Talamban, Cebu City",
     "phoneNum": "(+63)927 123 4567",
     "webURL": "https://www.sephaya.com",
-    "img": "sephaya.png",
+    "img": "https://media.istockphoto.com/id/1035219558/photo/female-hands-making-handmade-bijouterie-with-little-balls-and-stones.jpg?s=612x612&w=0&k=20&c=VMZHZHPkcZ_XLQEczMrTBOVtIcwcQFPY9rlvGmIYlvY=",
     "membershipLvl": 3,
     "isActive": true
   },
@@ -13,7 +13,7 @@
     "address": "456 Elm St, Talamban, Cebu City",
     "phoneNum": "(+63)927 234 5678",
     "webURL": "https://www.nenadelicacies.com",
-    "img": "greensolutions.png",
+    "img": "https://media.istockphoto.com/id/1299104835/photo/cinnamon-roll-with-white-icing.jpg?s=612x612&w=0&k=20&c=0TktSCIBtf8vODvAymGjRIRp1SR30wsLLc-8YYqJgZ8=",
     "membershipLvl": 3,
     "isActive": true
   },
@@ -22,7 +22,7 @@
     "address": "789 Oak St, Talamban, Cebu City",
     "phoneNum": "(+63)927 345 6789",
     "webURL": "https://www.futureenterprises.com",
-    "img": "futureenterprises.png",
+    "img": "https://media.istockphoto.com/id/1344939844/photo/hand-holding-drawing-virtual-lightbulb-with-brain-on-bokeh-background-for-creative-and-smart.jpg?s=612x612&w=0&k=20&c=2GLUy6eqCSr0NFRO8CHm8_PUMy9Qc8ryqcsRoe0DEYM=",
     "membershipLvl": 1,
     "isActive": false
   },
@@ -31,7 +31,7 @@
     "address": "101 Pine St, Talamban, Cebu City",
     "phoneNum": "(+63)927 456 7890",
     "webURL": "https://www.activefitness.com",
-    "img": "ecotechcorp.png",
+    "img": "https://media.istockphoto.com/id/1481309749/photo/gym-laughing-and-group-of-mature-women-telling-joke-after-fitness-class-conversation-and.jpg?s=612x612&w=0&k=20&c=SczUJaZG9JyOZdyeBB0ij3CmRKqkDsGNBrIb719Y0uM=",
     "membershipLvl": 1,
     "isActive": true
   },
@@ -40,25 +40,25 @@
     "address": "202 Maple St, Talamban, Cebu City",
     "phoneNum": "(+63)927 567 8901",
     "webURL": "https://www.smartsolutions.com",
-    "img": "smartsolutions.png",
+    "img": "https://media.istockphoto.com/id/2156387160/photo/hispanic-latin-american-couple-software-engineer-developer-use-computer-work-on-program.jpg?s=612x612&w=0&k=20&c=4MLKAJBBRdiPbhBfIWV4-raQzm5ssvi-Pi4-G8km_dU=",
     "membershipLvl": 2,
     "isActive": false
   },
   {
-    "name": "Innovative Designs",
+    "name": "Market Ville",
     "address": "303 Birch St, Talamban, Cebu City",
     "phoneNum": "(+63)927 678 9012",
-    "webURL": "https://www.innovativedesigns.com",
-    "img": "innovativedesigns.png",
+    "webURL": "https://www.marketville.com",
+    "img": "https://media.istockphoto.com/id/485611933/photo/unidentified-people-shopping-in-local-market.jpg?s=612x612&w=0&k=20&c=k-9Yz01oh7JirXOz-s1IWvVHyIZ4ftNXZXeM2ZWADNE=",
     "membershipLvl": 3,
     "isActive": true
   },
   {
-    "name": "Bright Future Enterprises",
+    "name": "Angel's Burger",
     "address": "404 Cedar St, Talamban, Cebu City",
     "phoneNum": "(+63)927 789 0123",
-    "webURL": "https://www.brightfuture.com",
-    "img": "brightfuture.png",
+    "webURL": "https://www.angelsburger.com",
+    "img": "https://media.istockphoto.com/id/1134021519/photo/cheeseburgers-frying-on-the-grill.jpg?s=612x612&w=0&k=20&c=AmT6Ib0p83ECorDo6tmWLKvQRxROqDqQFBWxHArXn58=",
     "membershipLvl": 2,
     "isActive": true
   }
