@@ -35,6 +35,17 @@
     grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
   }
 
+  /* list view */
+  #cards.list .card {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    text-align: left;
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;

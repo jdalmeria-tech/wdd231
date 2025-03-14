@@ -34,6 +34,10 @@
 body {
   background-color: var(--bg-color);
   color: var(--txt-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* header */
@@ -113,6 +117,10 @@ nav.open {
 }
 
 /* main */
+main {
+  flex: 1;
+}
+
 h1 {
   font-size: 1.5rem;
   padding: 2rem;
@@ -161,6 +169,10 @@ div.menu button img {
   width: 100%;
 }
 
+#cards.grid .card h2, #cards.list .card h2 {
+  font-size: 1.1rem;
+}
+
 #cards.grid .card img {
   width: 100%;
   height: auto;
@@ -175,6 +187,7 @@ div.menu button img {
   background-color: var(--bg-color);
   padding: 1rem 2rem;
   border-bottom: 2px solid var(--primary-color);
+  justify-content: center;
   text-align: left;
 }
 
@@ -186,6 +199,7 @@ div.menu button img {
 footer {
   background-color: var(--primary-color);
   padding: var(--footer-padding);
+  width: 100%;
 }
 
 /* Base styles for small screens */
