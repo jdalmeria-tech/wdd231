@@ -29,7 +29,6 @@
   --footer-icon-size: 2.5rem;
   --footer-icon-margin: 0.2rem;
 }
-
 /* Base styles for small screens */
 body {
   background-color: var(--bg-color);
@@ -39,7 +38,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 /* header */
 header {
   background-color: var(--primary-color);
@@ -55,7 +53,6 @@ header span {
   font-size: var(--header-font-size);
   font-weight: var(--header-font-weight);
 }
-
 /* navigation */
 nav {
   background-color: var(--txt-color);
@@ -96,8 +93,7 @@ ul li.current-menu-item a {
 ul.menuLinks {
   list-style-type: none;
 }
-
-/* CSS for the open class */
+/* CSS for the open class (button) */
 #myButton.open::before {
   content: "X";
 }
@@ -115,7 +111,6 @@ nav ul {
 nav.open {
   grid-template-rows: 1fr;
 }
-
 /* main */
 main {
   flex: 1;
@@ -125,7 +120,6 @@ h1 {
   font-size: 1.5rem;
   padding: 2rem;
 }
-
 /* styling the grid and list button */
 div.menu {
   display: flex;
@@ -149,7 +143,6 @@ div.menu button img {
   height: auto;
 }
 /* end of styling the grid and list button */
-
 /* Styles for grid and list views */
 #cards.grid {
   display: grid;
@@ -196,7 +189,6 @@ div.menu button img {
 #cards.list .card img {
   display: none;
 }
-
 /* footer */
 footer {
   background-color: var(--primary-color);

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- scripts -->
-  <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/directory.js" defer></script>
@@ -47,7 +46,6 @@
     <span>Talamban Chamber of Commerce</span>
     <button id="myButton" aria-label="burger button menu"></button>
   </header>
-
   <nav id="animateMe">
     <ul class="menuLinks">
       <li><a href="#" title="Home">Home</a></li>
@@ -56,16 +54,14 @@
       <li><a href="#" title="Discover">Discover</a></li>
     </ul>
   </nav>
-
   <main>
     <h1>Directory</h1>
     <div class="menu">
-      <button id="grid"><img src="images/gridIcon.png" alt="grid-icon-view"></button>
-      <button id="list"><img src="images/listIcon.png" alt="list-icon-view"></button>
+      <button id="grid"><img src="images/gridIcon.png" alt="grid-icon-view" loading="lazy"></button>
+      <button id="list"><img src="images/listIcon.png" alt="list-icon-view" loading="lazy"></button>
     </div>
     <div id="cards" class="grid"></div>
   </main>
-  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -96,5 +92,4 @@
     </div>
   </footer>
 </body>
-
 </html>
