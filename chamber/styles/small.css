@@ -144,10 +144,11 @@ div.menu button img {
 }
 
 #cards.grid .card {
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 8px; 
   text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #cards.grid .card img {
