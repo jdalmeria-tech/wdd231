@@ -172,13 +172,6 @@ div.menu button img {
   display: none;
 }
 
-/* Responsive styles */
-@media (min-width: 38rem) {
-  #cards.grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* footer */
 
 footer {

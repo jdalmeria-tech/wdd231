@@ -1,4 +1,10 @@
-@media only screen and (min-width: 38rem) {
+@media (min-width: 44rem) {
+  #cards.grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media only screen and (min-width: 63rem) {
   /* Styles for larger screens */
 
   /* header section and nav */
@@ -23,6 +29,12 @@
     grid-template-rows: 1fr;
   }
 
+  /* main */
+  /* for the cards */
+  #cards.grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;
@@ -39,3 +51,4 @@
     justify-content: center;
   }
 }
+
