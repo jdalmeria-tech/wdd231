@@ -20,7 +20,7 @@
   --header-font-weight: 700;
   --button-padding: 0.5rem;
   --button-bg-color: var(--bg-color);
-  --button-img-width: 50px;
+  --button-img-width: 2rem;
   --card-padding: 1rem;
   --card-border-radius: 8px;
   --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -148,6 +148,7 @@ div.menu button img {
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 2rem;
+  justify-items: center;
 }
 
 #cards.grid .card {
@@ -156,6 +157,8 @@ div.menu button img {
   border-radius: var(--card-border-radius);
   text-align: left;
   box-shadow: var(--card-box-shadow);
+  max-width: 400px;
+  width: 100%;
 }
 
 #cards.grid .card img {
