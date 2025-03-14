@@ -177,6 +177,8 @@ div.menu button img {
   width: 100%;
   height: auto;
   border-radius: var(--card-border-radius);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 #cards.list {

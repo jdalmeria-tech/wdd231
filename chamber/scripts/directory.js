@@ -13,7 +13,7 @@ function displayMembers(members) {
     card.classList.add('card');
 
     card.innerHTML = `
-      <img src="${member.img}" alt="${member.name}" class="member-img">
+      <img src="${member.img}" alt="${member.name}" class="member-img" loading="lazy">
       <h2>${member.name}</h2>
       <p>${member.address}</p>
       <a href="${member.webURL}" target="_blank">${member.webURL}</a>
