@@ -10,8 +10,8 @@
 }
 
 :root {
-  --primary-color: #acb8f0;
-  --secondary-color: #8093e9;
+  --primary-color: #8093e9;
+  --secondary-color: #acb8f0;
   --bg-color: #ffffff;
   --txt-color: #1d1b1bd3;
 }
@@ -107,8 +107,76 @@ nav.open {
 
 h1 {
   font-size: 1.5rem;
+  padding: 2rem;
 }
 
+/* styling the grid and list button */
+
+div.menu {
+  display: flex;
+  justify-content: center; 
+  gap: 1rem; 
+  margin: .5rem 0;
+}
+
+div.menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+}
+
+div.menu button img {
+  width: 50px;
+  height: auto;
+}
+/* end of styling the grid and list button */
+
+/* Styles for grid and list views */
+#cards.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+#cards.grid .card {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#cards.grid .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#cards.list {
+  display: block;
+}
+
+#cards.list .card {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  text-align: left;
+}
+
+#cards.list .card img {
+  display: none;
+}
+
+/* Responsive styles */
+@media (min-width: 38rem) {
+  #cards.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* footer */
 
@@ -121,18 +189,18 @@ footer {
 footer .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center; 
   text-align: left;
   font-size: .8rem;
 }
 
 .footer-content {
-  width: 100%; /* Ensure full width for alignment */
+  width: 100%; 
 }
 
 .footer-content ul {
   display: flex;
-  justify-content: center; /* Center list items */
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: .5rem;
@@ -146,7 +214,7 @@ footer .container {
 }
 
 .footer-content ul a:hover {
-  color:black;
+  color: var(--bg-color);
 }
 
 .footer-content li {
