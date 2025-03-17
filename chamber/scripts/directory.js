@@ -11,13 +11,16 @@ function displayMembers(members) {
   members.forEach(member => {
     const card = document.createElement('article');
     card.classList.add('card');
+    card.setAttribute('role', 'region');
+    card.setAttribute('aria-labelledby', `member-${member.id}-name`);
+    card.setAttribute('aria-describedby', `member-${member.id}-address member-${member.id}-membership`); //remove the arialable of the card
 
     card.innerHTML = `
-      <img src="${member.img}" alt="${member.name} photo" class="member-img">
-      <h2>${member.name}</h2>
-      <p>${member.address}</p>
-      <a href="${member.webURL}" target="_blank">${member.webURL}</a>
-      <p>Membership Level: ${member.membershipLvl}</p>
+      <img src="${member.img}" alt="${member.name} photo" class="member-img" tabindex="0">
+      <h2 id="member-${member.id}-name" tabindex="0">${member.name}</h2>
+      <p id="member-${member.id}-address" tabindex="0">${member.address}</p>
+      <a href="${member.webURL}" target="_blank" tabindex="0">${member.webURL}</a>
+      <p id="member-${member.id}-membership" tabindex="0">Membership Level: ${member.membershipLvl}</p>
     `;
 
     cardsContainer.appendChild(card);
