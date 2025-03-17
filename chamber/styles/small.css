@@ -10,8 +10,8 @@
 }
 
 :root {
-  --primary-color: #8093e9;
-  --secondary-color: #acb8f0;
+  --primary-color:#acb8f0;
+  --secondary-color: #8093e9;
   --bg-color: #ffffff;
   --txt-color: #1d1b1bd3;
   --highlight-color: #ffd000;
