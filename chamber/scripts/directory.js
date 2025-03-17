@@ -12,8 +12,8 @@ function displayMembers(members) {
     const card = document.createElement('article');
     card.classList.add('card');
     card.setAttribute('role', 'region');
-    card.setAttribute('aria-labelledby', `member-${member.id}-name`);
-    card.setAttribute('aria-describedby', `member-${member.id}-address member-${member.id}-membership`); //remove the arialable of the card
+    card.setAttribute('aria-labelledby', `TCC Directory`);
+    card.setAttribute('aria-describedby', `TCC Directory`);
 
     card.innerHTML = `
       <img src="${member.img}" alt="${member.name} photo" class="member-img" tabindex="0">
