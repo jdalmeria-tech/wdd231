@@ -21,6 +21,7 @@
   --button-padding: 0.5rem;
   --button-bg-color: var(--bg-color);
   --button-img-width: 2rem;
+  --button-img-height: 2rem;
   --card-padding: 1rem;
   --card-border-radius: 8px;
   --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -140,7 +141,7 @@ div.menu button {
 
 div.menu button img {
   width: var(--button-img-width);
-  height: auto;
+  height: var(--button-img-height);
 }
 /* end of styling the grid and list button */
 /* Styles for grid and list views */
