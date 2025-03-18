@@ -173,6 +173,7 @@ div.menu button img {
 }
 
 #cards.grid .card img {
+  max-width: 100%;
   width: 365px;
   height: 200px;
   border-radius: var(--card-border-radius);
