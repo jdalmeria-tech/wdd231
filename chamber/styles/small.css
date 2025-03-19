@@ -236,7 +236,7 @@ footer .container {
 }
 
 .footer-content ul a:hover {
-  color: var(--bg-color);
+  color: black;
 }
 
 .footer-content li {
