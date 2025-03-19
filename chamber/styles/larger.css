@@ -1,6 +1,6 @@
 @media (min-width: 44rem) {
   #cards.grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    grid-template-columns: repeat(2, 1fr); /* two columns for medium screens */
   }
 }
 
@@ -32,7 +32,7 @@
   /* main */
   /* for the cards */
   #cards.grid {
-    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    grid-template-columns: repeat(3, 1fr); /* three columns for larger screens */
   }
 
   /* list view */
@@ -67,10 +67,14 @@
     outline-offset: 2px;
   }
 
-  /* Additional styles for specific elements if needed */
+  /* additional styles for specific elements if needed */
   button:focus, a:focus {
     outline: 2px solid var(--secondary-color);
     outline-offset: 2px;
+  }
+  /* this is the hero image */
+  section picture {
+    max-width: 100%;
   }
 }
 
