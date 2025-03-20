@@ -264,7 +264,7 @@ section picture {
   display: block;
   width: 100%;
   max-width: 1200px; /* limit the maximum width */
-  margin: 0 auto;
+  margin: 0;
 }
 
 section picture img {
