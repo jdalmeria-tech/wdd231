@@ -36,9 +36,10 @@
   </noscript>
   <!-- scripts -->
   <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script> 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
@@ -68,6 +69,40 @@
       </a>
     </section>
     <h1 tabindex="0">Home</h1>
+
+    <section class="events">
+      <h2>Events</h2>
+      <div class="event-container">
+        <!-- populated events will be here -->
+      </div>
+    </section>
+
+    <!-- weather section -->
+    <section class="weather">
+      <h2>Current Weather</h2>
+      <div class="weather-container">
+        <div class="current-weather">
+          <img id="weather-icon" src="" alt="Weather icon">
+          <p class="temperature"><span id="current-temp"></span>°C</p>
+          <p id="weather-desc"></p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+        </div>
+        <div class="forecast">
+          <h2>Weather Forecast</h2>
+          <div class="forecast-container">
+            <!-- populated forecast will be here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- spotlight section -->
+     <section class="spotlights">
+      <div class="spotlight-container">
+        <!-- spotlights will be populated by JavaScript -->
+      </div>
+     </section>
+
 
   </main>
   <footer>

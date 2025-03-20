@@ -298,3 +298,83 @@ section picture img {
   text-decoration: none;
   display: inline-block; 
 }
+
+/* Events Section */
+.events {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  margin: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+/* Weather Section */
+.weather {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  margin: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.current-weather {
+  margin-bottom: 1rem;
+}
+
+#weather-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.forecast-day {
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Spotlights Section */
+.spotlights {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: var(--bg-color);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+  color: var(--txt-color);
+  margin-bottom: 0.5rem;
+}

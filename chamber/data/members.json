@@ -6,7 +6,9 @@
     "webURL": "https://www.sephaya.com",
     "img": "images/sephaya.webp",
     "membershipLvl": 3,
-    "isActive": true
+    "isActive": true,
+    "tagline": "Your style, our passion.",
+    "email": "contact@sephaya.com"
   },
   {
     "name": "Nena's Delicacies",
@@ -15,7 +17,9 @@
     "webURL": "https://www.nenadelicacies.com",
     "img": "images/cinnamon.webp",
     "membershipLvl": 3,
-    "isActive": true
+    "isActive": true,
+    "tagline": "Taste the tradition.",
+    "email": "info@nenadelicacies.com"
   },
   {
     "name": "Arra Tech Intelligences",
@@ -24,7 +28,9 @@
     "webURL": "https://www.arratech.com",
     "img": "images/arratech.webp",
     "membershipLvl": 1,
-    "isActive": false
+    "isActive": false,
+    "tagline": "Innovating the future.",
+    "email": "support@arratech.com"
   },
   {
     "name": "Active Fitness Gym",
@@ -33,7 +39,9 @@
     "webURL": "https://www.activefitness.com",
     "img": "images/activeFitness.webp",
     "membershipLvl": 1,
-    "isActive": true
+    "isActive": true,
+    "tagline": "Your fitness, our mission.",
+    "email": "hello@activefitness.com"
   },
   {
     "name": "Smart Solutions LLC",
@@ -42,7 +50,9 @@
     "webURL": "https://www.smartsolutions.com",
     "img": "images/smartsol.webp",
     "membershipLvl": 2,
-    "isActive": false
+    "isActive": false,
+    "tagline": "Simplifying your world.",
+    "email": "contact@smartsolutions.com"
   },
   {
     "name": "Market Ville",
@@ -51,7 +61,9 @@
     "webURL": "https://www.marketville.com",
     "img": "images/marketVille.webp",
     "membershipLvl": 3,
-    "isActive": true
+    "isActive": true,
+    "tagline": "Your one-stop shop.",
+    "email": "info@marketville.com"
   },
   {
     "name": "Angel's Burger",
@@ -60,6 +72,8 @@
     "webURL": "https://www.angelsburger.com",
     "img": "images/angelsburger.webp",
     "membershipLvl": 2,
-    "isActive": true
+    "isActive": true,
+    "tagline": "Burgers made with love.",
+    "email": "support@angelsburger.com"
   }
 ]
