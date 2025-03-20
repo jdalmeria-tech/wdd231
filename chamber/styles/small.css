@@ -276,7 +276,7 @@ section picture img {
 
 .home-action-btn {
   position: absolute;
-  bottom: 1rem; 
+  bottom: 2rem; 
   right: 1rem;
   background-color: var(--highlight-color);
   color: var(--txt-color);
@@ -292,4 +292,9 @@ section picture img {
 .home-action-btn:hover {
   background-color: var(--txt-color);
   color: var(--highlight-color);
+}
+
+.home-action-link {
+  text-decoration: none;
+  display: inline-block; 
 }
