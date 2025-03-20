@@ -46,6 +46,11 @@
     text-align: left;
   }
 
+  /* spotlight cards */
+  .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;

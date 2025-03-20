@@ -42,7 +42,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function displaySpotlights(members) {
+function displaySpotlights() {
     const container = document.querySelector('.spotlight-container');
     if (!container) {
         console.error('Spotlight container not found in the DOM.');
@@ -50,25 +50,50 @@ function displaySpotlights(members) {
     }
     container.innerHTML = '';
 
-    members.forEach(member => {
-        if (!member.img || !member.name || !member.website) {
-            console.warn('Skipping member with missing required properties:', member);
-            return;
+    const members = [
+        {
+            name: "Sephaya Accessories",
+            tagline: "Your style, our passion.",
+            email: "contact@sephaya.com",
+            phone: "(+63)927 123 4567",
+            webURL: "https://www.sephaya.com"
+        },
+        {
+            name: "Nena's Delicacies",
+            tagline: "Taste the tradition.",
+            email: "info@nenadelicacies.com",
+            phone: "(+63)927 234 5678",
+            webURL: "https://www.nenadelicacies.com"
+        },
+        {
+            name: "Arra Tech Intelligences",
+            tagline: "Innovating the future.",
+            email: "support@arratech.com",
+            phone: "(+63)927 345 6789",
+            webURL: "https://www.arratech.com"
         }
+    ];
 
+    members.forEach(member => {
         const spotlight = document.createElement('div');
         spotlight.className = 'spotlight-card';
         spotlight.innerHTML = `
-            <img src="${member.img}" alt="${member.name} logo">
-            <h3>${member.name}</h3>
-            <p>${member.address || 'Address not available'}</p>
-            <p>${member.phone || 'Phone not available'}</p>
-            <p><a href="${member.website}" target="_blank">Visit Website</a></p>
-            <p class="membership-level">Member Level: ${member.membership || 'N/A'}</p>
+            <div class="spotlight-header">
+                <h3>${member.name}</h3>
+                <p>${member.tagline}</p>
+            </div>
+            <div class="spotlight-body">
+                <img src="images/placeholder-logo.webp" alt="${member.name} logo" class="spotlight-logo">
+                <div class="spotlight-info">
+                    <p><strong>Email:</strong> ${member.email}</p>
+                    <p><strong>Phone:</strong> ${member.phone}</p>
+                    <p><strong>Website:</strong> <a href="${member.webURL}" target="_blank">${member.webURL}</a></p>
+                </div>
+            </div>
         `;
         container.appendChild(spotlight);
     });
 }
 
 // Load spotlights when the page loads
-document.addEventListener('DOMContentLoaded', loadSpotlights);
+document.addEventListener('DOMContentLoaded', displaySpotlights);
