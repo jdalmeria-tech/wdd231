@@ -308,7 +308,7 @@ section picture img {
 }
 
 /* Weather Section */
-.weather {
+.weather-a, .weather-b {
   padding: 1rem;
   background-color: var(--bg-color);
   margin: 1rem;
@@ -423,4 +423,42 @@ section picture img {
 
 .spotlight-info a:hover {
     text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  grid-template-rows: auto auto; /* Two rows: one for sections, one for spotlights */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.homepage-grid .events {
+  grid-column: span 1; /* One column */
+}
+
+.homepage-grid .weather-a {
+  grid-column: span 1; /* One column */
+}
+
+.homepage-grid .weather-b {
+  grid-column: span 1; /* One column */
+}
+
+.homepage-grid .spotlights {
+  grid-column: span 3; /* Full width in the second row */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .homepage-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .homepage-grid .events,
+  .homepage-grid .weather-a,
+  .homepage-grid .weather-b,
+  .homepage-grid .spotlights {
+    grid-column: span 1; /* Full width for all sections */
+  }
 }

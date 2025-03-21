@@ -70,40 +70,47 @@
     </section>
     <h1 tabindex="0">Home</h1>
 
-    <section class="events">
-      <h2>Events</h2>
-      <div class="event-container">
-        <!-- populated events will be here -->
-      </div>
-    </section>
-
-    <!-- weather section -->
-    <section class="weather">
-      <h2>Current Weather</h2>
-      <div class="weather-container">
-        <div class="current-weather">
-          <img id="weather-icon" src="" alt="Weather icon">
-          <p class="temperature"><span id="current-temp"></span>°C</p>
-          <p id="weather-desc"></p>
-          <p>Humidity: <span id="humidity"></span>%</p>
+    <div class="homepage-grid">
+      <section class="events">
+        <h2>Events</h2>
+        <div class="event-container">
+          <!-- populated events will be here -->
         </div>
-        <div class="forecast">
-          <h2>Weather Forecast</h2>
-          <div class="forecast-container">
-            <!-- populated forecast will be here -->
+      </section>
+
+      <section class="weather-a">
+        <h2>Current Weather</h2>
+        <div class="weather-container">
+          <div class="current-weather">
+            <img id="weather-icon" src="" alt="Weather icon">
+            <p class="temperature"><span id="current-temp"></span>°C</p>
+            <p id="weather-desc"></p>
+            <p>High <span id="high"></span>°</p>
+            <p>Low <span id="low"></span>°</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Sunrise: <span id="rise"></span>am</p>
+            <p>Sunset: <span id="set"></span>pm</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- spotlight section -->
-     <section class="spotlights">
-      <div class="spotlight-container">
-        <!-- spotlights will be populated by JavaScript -->
-      </div>
-     </section>
+      <section class="weather-b">
+        <h2>Weather Forecast</h2>
+        <div class="weather-container">
+          <div class="forecast">
+            <div class="forecast-container">
+              <!-- populated forecast will be here -->
+            </div>
+          </div>
+        </div>
+      </section>
 
-
+      <section class="spotlights">
+        <div class="spotlight-container">
+          <!-- spotlights will be populated by JavaScript -->
+        </div>
+      </section>
+    </div>
   </main>
   <footer>
     <div class="container">
