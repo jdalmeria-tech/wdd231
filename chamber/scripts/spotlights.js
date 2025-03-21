@@ -6,14 +6,14 @@ async function loadSpotlights() {
         }
         const members = await response.json();
 
-        // Map membershipLvl to membership levels
+        // map membershipLvl to membership levels
         const membershipMap = {
             1: 'member',
             2: 'silver',
             3: 'gold'
         };
 
-        // Filter for silver and gold members
+        // filter for silver and gold members
         const eligibleMembers = members.filter(member =>
             ['silver', 'gold'].includes(membershipMap[member.membershipLvl]?.toLowerCase()) && member.isActive
         );
@@ -23,12 +23,11 @@ async function loadSpotlights() {
             return;
         }
 
-        // Shuffle the array to ensure randomness
+        // shuffle the array to ensure randomness
         const shuffledMembers = shuffleArray(eligibleMembers);
 
-        // Randomly select 2-3 members
-        const numberOfSpotlights = Math.floor(Math.random() * 2) + 2; // Random number between 2 and 3
-        const selectedMembers = shuffledMembers.slice(0, numberOfSpotlights);
+        // select exactly 3 members
+        const selectedMembers = shuffledMembers.slice(0, 3);
 
         displaySpotlights(selectedMembers, membershipMap);
     } catch (error) {
@@ -66,7 +65,7 @@ function displaySpotlights(members, membershipMap) {
                 <div class="spotlight-info">
                     <p><strong>Email:</strong> ${member.email}</p>
                     <p><strong>Phone:</strong> ${member.phoneNum}</p>
-                    <p><strong>Website:</strong> <a href="${member.webURL}" target="_blank">${member.webURL}</a></p>
+                    <p><strong>URL:</strong> <a href="${member.webURL}" target="_blank">${member.webURL}</a></p>
                     <p><strong>Membership Level:</strong> ${membershipMap[member.membershipLvl]}</p>
                 </div>
             </div>
@@ -75,5 +74,5 @@ function displaySpotlights(members, membershipMap) {
     });
 }
 
-// Load spotlights when the page loads
+// load spotlights when the page loads
 document.addEventListener('DOMContentLoaded', loadSpotlights);
