@@ -67,16 +67,6 @@
     justify-content: center;
   }
 
-  :focus {
-    outline: 2px solid var(--secondary-color); /* secondary color outline for focused elements */
-    outline-offset: 2px;
-  }
-
-  /* additional styles for specific elements if needed */
-  button:focus, a:focus {
-    outline: 2px solid var(--secondary-color);
-    outline-offset: 2px;
-  }
   /* this is the hero image */
   div picture {
     max-width: 100%;
