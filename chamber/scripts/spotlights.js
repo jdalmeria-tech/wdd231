@@ -8,14 +8,14 @@ async function loadSpotlights() {
 
         // Map membershipLvl to membership levels
         const membershipMap = {
-            1: 'gold',
+            1: 'member',
             2: 'silver',
-            3: 'bronze'
+            3: 'gold'
         };
 
-        // Filter for gold and silver members
+        // Filter for silver and gold members
         const eligibleMembers = members.filter(member =>
-            ['gold', 'silver'].includes(membershipMap[member.membershipLvl]?.toLowerCase()) && member.isActive
+            ['silver', 'gold'].includes(membershipMap[member.membershipLvl]?.toLowerCase()) && member.isActive
         );
 
         if (eligibleMembers.length === 0) {
@@ -23,9 +23,12 @@ async function loadSpotlights() {
             return;
         }
 
+        // Shuffle the array to ensure randomness
+        const shuffledMembers = shuffleArray(eligibleMembers);
+
         // Randomly select 2-3 members
         const numberOfSpotlights = Math.floor(Math.random() * 2) + 2; // Random number between 2 and 3
-        const selectedMembers = shuffleArray(eligibleMembers).slice(0, numberOfSpotlights);
+        const selectedMembers = shuffledMembers.slice(0, numberOfSpotlights);
 
         displaySpotlights(selectedMembers, membershipMap);
     } catch (error) {
@@ -34,6 +37,7 @@ async function loadSpotlights() {
 }
 
 function shuffleArray(array) {
+    // Fisher-Yates shuffle algorithm
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
@@ -58,7 +62,7 @@ function displaySpotlights(members, membershipMap) {
                 <p>${member.tagline}</p>
             </div>
             <div class="spotlight-body">
-                <img src="${member.img}" alt="${member.name} logo" class="spotlight-logo">
+                <img src="${member.logo}" alt="${member.name} logo" class="spotlight-logo">
                 <div class="spotlight-info">
                     <p><strong>Phone:</strong> ${member.phoneNum}</p>
                     <p><strong>Address:</strong> ${member.address}</p>
