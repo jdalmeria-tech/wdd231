@@ -73,8 +73,8 @@ function displayForecast(data) {
         const forecastDay = document.createElement('div');
         forecastDay.className = 'forecast-day';
         forecastDay.innerHTML = `
-            <h4>${dayName}</h4>
-            <p>${Math.round(forecast.main.temp)}°C</p>
+            <h4 tabindex="0">${dayName}</h4>
+            <p tabindex="0">${Math.round(forecast.main.temp)}°C</p>
         `;
         forecastContainer.appendChild(forecastDay);
     });

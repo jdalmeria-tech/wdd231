@@ -57,11 +57,11 @@ function displaySpotlights(members, membershipMap) {
         spotlight.className = 'spotlight-card';
         spotlight.innerHTML = `
             <div class="spotlight-header">
-                <h3>${member.name}</h3>
-                <p>${member.tagline}</p>
+                <h3 tabindex="0">${member.name}</h3>
+                <p tabindex="0">${member.tagline}</p>
             </div>
             <div class="spotlight-body">
-                <img src="${member.logo}" alt="${member.name} logo" class="spotlight-logo">
+                <img src="${member.logo}" alt="${member.name} logo" class="spotlight-logo" tabindex="0">
                 <div class="spotlight-info">
                     <p><strong>Email:</strong> ${member.email}</p>
                     <p><strong>Phone:</strong> ${member.phoneNum}</p>
