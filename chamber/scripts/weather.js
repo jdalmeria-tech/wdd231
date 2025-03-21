@@ -32,6 +32,10 @@ function displayCurrentWeather(data) {
     const currentTemp = document.getElementById('current-temp');
     const humidity = document.getElementById('humidity');
     const weatherIcon = document.getElementById('weather-icon');
+    const high = document.getElementById('high');
+    const low = document.getElementById('low');
+    const rise = document.getElementById('rise');
+    const set = document.getElementById('set');
 
     // Display all weather events
     const descriptions = data.weather.map(event =>
@@ -41,6 +45,14 @@ function displayCurrentWeather(data) {
     currentTemp.textContent = Math.round(data.main.temp);
     weatherDesc.textContent = descriptions;
     humidity.textContent = data.main.humidity;
+    high.textContent = Math.round(data.main.temp_max);
+    low.textContent = Math.round(data.main.temp_min);
+
+    const sunrise = new Date(data.sys.sunrise * 1000);
+    const sunset = new Date(data.sys.sunset * 1000);
+    rise.textContent = sunrise.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    set.textContent = sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.alt = descriptions;
 }

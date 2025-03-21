@@ -256,17 +256,17 @@ button:focus, a:focus {
 /* the above is the directory page, this where we started all */
 /* this is for the home page */
 
-section {
+div {
   position: relative; 
 }
 
-section picture {
+div picture {
   display: block;
   width: 100%;
   max-width: 1200px;
 }
 
-section picture img {
+div picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -294,8 +294,25 @@ section picture img {
 }
 
 .home-action-link {
+  position: absolute;
+  bottom: 1rem; /* adjust distance from the bottom */
+  right: 1rem; /* adjust distance from the right */
+  background-color: var(--highlight-color);
+  color: var(--txt-color);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--highlight-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* for floating effect */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  display: inline-block; 
+}
+
+.home-action-link:hover {
+  background-color: var(--txt-color);
+  color: var(--highlight-color);
 }
 
 /* Events Section */
@@ -321,12 +338,32 @@ section picture img {
 }
 
 .current-weather {
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 #weather-icon {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  box-shadow: var(--card-box-shadow);
+  border-radius: 5%;
+  background-color: var(--primary-color);
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5rem;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.weather-details p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .temperature {
@@ -343,7 +380,9 @@ section picture img {
 
 .forecast-day {
   padding: 0.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
+  border: 3px solid var(--secondary-color);
+  box-shadow: var(--card-box-shadow);
   border-radius: 5px;
 }
 
@@ -422,13 +461,13 @@ section picture img {
 }
 
 .spotlight-info a:hover {
-    text-decoration: underline; /* Add underline on hover for better visibility */
+    text-decoration: underline; /* for better visibility */
 }
 
 .homepage-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-  grid-template-rows: auto auto; /* Two rows: one for sections, one for spotlights */
+  grid-template-columns: repeat(3, 1fr); /* three equal columns */
+  grid-template-rows: auto auto; /* one for sections, one for spotlights */
   gap: 1rem;
   padding: 1rem;
 }
