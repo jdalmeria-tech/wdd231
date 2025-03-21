@@ -83,8 +83,20 @@
   }
   /* layout for desktop view */
   .homepage-grid {
-    grid-template-columns: repeat(3, 1fr); /* three equal columns for desktop */
-    grid-template-rows: auto auto; /* one for sections, one for spotlights */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns for desktop */
+    grid-template-rows: auto auto; /* Rows for sections and spotlights */
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%; /* Ensure it respects the parent's width */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+  }
+
+  .homepage-grid > * {
+    margin: 0 auto; /* Center elements horizontally */
+    width: 100%; /* Ensure child elements respect the parent's width */
+    max-width: 100%; /* Prevent child elements from exceeding the parent's width */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+    overflow: hidden; /* Prevent content overflow */
   }
 
   .homepage-grid .events {

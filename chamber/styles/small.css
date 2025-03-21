@@ -396,7 +396,7 @@ div picture img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 .spotlight-card {
@@ -470,6 +470,16 @@ div picture img {
   grid-template-columns: 1fr; /* Single column layout for mobile */
   gap: 1rem;
   padding: 1rem;
+  width: 100%; /* Ensure it respects the parent's width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+.homepage-grid > * {
+  margin: 0 auto; /* Center elements horizontally */
+  width: 100%; /* Ensure child elements respect the parent's width */
+  max-width: 100%; /* Prevent child elements from exceeding the parent's width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .homepage-grid .events,
