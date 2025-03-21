@@ -473,6 +473,12 @@ div picture img {
     text-decoration: underline; /* for better visibility */
 }
 
+.spotlight-info {
+  width: 100%; /* Ensure it respects the parent's width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+  overflow: hidden; /* Prevent content overflow */
+}
+
 /* layout for mobile view */
 .homepage-grid {
   display: grid;
