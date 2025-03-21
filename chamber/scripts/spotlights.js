@@ -5,7 +5,6 @@ async function loadSpotlights() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const members = await response.json();
-        console.log('Fetched members:', members); // Debugging log
 
         // Map membershipLvl to membership levels
         const membershipMap = {
@@ -16,7 +15,7 @@ async function loadSpotlights() {
 
         // Filter for gold and silver members
         const eligibleMembers = members.filter(member =>
-            ['gold', 'silver'].includes(membershipMap[member.membershipLvl]?.toLowerCase())
+            ['gold', 'silver'].includes(membershipMap[member.membershipLvl]?.toLowerCase()) && member.isActive
         );
 
         if (eligibleMembers.length === 0) {
@@ -28,7 +27,7 @@ async function loadSpotlights() {
         const numberOfSpotlights = Math.floor(Math.random() * 2) + 2; // Random number between 2 and 3
         const selectedMembers = shuffleArray(eligibleMembers).slice(0, numberOfSpotlights);
 
-        displaySpotlights(selectedMembers);
+        displaySpotlights(selectedMembers, membershipMap);
     } catch (error) {
         console.error('Error loading members:', error);
     }
@@ -42,37 +41,13 @@ function shuffleArray(array) {
     return array;
 }
 
-function displaySpotlights() {
+function displaySpotlights(members, membershipMap) {
     const container = document.querySelector('.spotlight-container');
     if (!container) {
         console.error('Spotlight container not found in the DOM.');
         return;
     }
     container.innerHTML = '';
-
-    const members = [
-        {
-            name: "Sephaya Accessories",
-            tagline: "Your style, our passion.",
-            email: "contact@sephaya.com",
-            phone: "(+63)927 123 4567",
-            webURL: "https://www.sephaya.com"
-        },
-        {
-            name: "Nena's Delicacies",
-            tagline: "Taste the tradition.",
-            email: "info@nenadelicacies.com",
-            phone: "(+63)927 234 5678",
-            webURL: "https://www.nenadelicacies.com"
-        },
-        {
-            name: "Arra Tech Intelligences",
-            tagline: "Innovating the future.",
-            email: "support@arratech.com",
-            phone: "(+63)927 345 6789",
-            webURL: "https://www.arratech.com"
-        }
-    ];
 
     members.forEach(member => {
         const spotlight = document.createElement('div');
@@ -83,11 +58,12 @@ function displaySpotlights() {
                 <p>${member.tagline}</p>
             </div>
             <div class="spotlight-body">
-                <img src="images/placeholder-logo.webp" alt="${member.name} logo" class="spotlight-logo">
+                <img src="${member.img}" alt="${member.name} logo" class="spotlight-logo">
                 <div class="spotlight-info">
-                    <p><strong>Email:</strong> ${member.email}</p>
-                    <p><strong>Phone:</strong> ${member.phone}</p>
+                    <p><strong>Phone:</strong> ${member.phoneNum}</p>
+                    <p><strong>Address:</strong> ${member.address}</p>
                     <p><strong>Website:</strong> <a href="${member.webURL}" target="_blank">${member.webURL}</a></p>
+                    <p><strong>Membership Level:</strong> ${membershipMap[member.membershipLvl]}</p>
                 </div>
             </div>
         `;
@@ -96,4 +72,4 @@ function displaySpotlights() {
 }
 
 // Load spotlights when the page loads
-document.addEventListener('DOMContentLoaded', displaySpotlights);
+document.addEventListener('DOMContentLoaded', loadSpotlights);

@@ -28,7 +28,7 @@
     "webURL": "https://www.arratech.com",
     "img": "images/arratech.webp",
     "membershipLvl": 2,
-    "isActive": false,
+    "isActive": true,
     "tagline": "Innovating the future.",
     "email": "support@arratech.com"
   },
