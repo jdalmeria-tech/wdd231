@@ -390,15 +390,17 @@ div picture img {
 .spotlights {
   padding: 1rem;
   margin: 1rem;
-
+  box-sizing: border-box;
   border: 2px solid limegreen
 }
 
 .spotlight-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between cards */
+  margin: 0 auto; /* Center the grid horizontally */
+  width: 100%; /* Ensure it respects the parent's width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
 }
 
 .spotlight-card {
@@ -412,6 +414,8 @@ div picture img {
   flex-direction: column;
   align-items: stretch;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .spotlight-header {
@@ -442,6 +446,7 @@ div picture img {
 }
 
 .spotlight-info p {
+  font-size: 1rem;
   margin: 0.5rem 0;
   text-align: left;
 }
@@ -449,7 +454,8 @@ div picture img {
 .spotlight-card img {
   max-width: 150px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: .5rem;
 }
 
 .spotlight-card h3 {
