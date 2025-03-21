@@ -73,36 +73,36 @@
   }
   /* layout for desktop view */
   .homepage-grid {
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns for desktop */
-    grid-template-rows: auto auto; /* Rows for sections and spotlights */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
     gap: 1rem;
     padding: 1rem;
-    width: 100%; /* Ensure it respects the parent's width */
-    box-sizing: border-box; /* Include padding and borders in width calculation */
+    width: 100%; 
+    box-sizing: border-box; 
   }
 
   .homepage-grid > * {
-    margin: 0 auto; /* Center elements horizontally */
-    width: 100%; /* Ensure child elements respect the parent's width */
-    max-width: 100%; /* Prevent child elements from exceeding the parent's width */
-    box-sizing: border-box; /* Include padding and borders in width calculation */
-    overflow: hidden; /* Prevent content overflow */
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    overflow: hidden;
   }
 
   .homepage-grid .events {
-    grid-column: span 1; /* One column */
+    grid-column: span 1; 
   }
 
   .homepage-grid .weather-a {
-    grid-column: span 1; /* One column */
+    grid-column: span 1;
   }
 
   .homepage-grid .weather-b {
-    grid-column: span 1; /* One column */
+    grid-column: span 1; 
   }
 
   .homepage-grid .spotlights {
-    grid-column: span 3; /* Full width in the second row */
+    grid-column: span 3; 
   }
 }
 
