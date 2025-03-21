@@ -68,7 +68,7 @@ function displayForecast(data) {
 
     dailyForecasts.forEach(forecast => {
         const date = new Date(forecast.dt * 1000);
-        const dayName = date.toLocaleDateString('en-US', { weekday: 'short' });
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
 
         const forecastDay = document.createElement('div');
         forecastDay.className = 'forecast-day';
