@@ -81,5 +81,26 @@
   div picture {
     max-width: 100%;
   }
+  /* layout for desktop view */
+  .homepage-grid {
+    grid-template-columns: repeat(3, 1fr); /* three equal columns for desktop */
+    grid-template-rows: auto auto; /* one for sections, one for spotlights */
+  }
+
+  .homepage-grid .events {
+    grid-column: span 1; /* One column */
+  }
+
+  .homepage-grid .weather-a {
+    grid-column: span 1; /* One column */
+  }
+
+  .homepage-grid .weather-b {
+    grid-column: span 1; /* One column */
+  }
+
+  .homepage-grid .spotlights {
+    grid-column: span 3; /* Full width in the second row */
+  }
 }
 
