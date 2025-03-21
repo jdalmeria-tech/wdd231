@@ -64,8 +64,8 @@ function displaySpotlights(members, membershipMap) {
             <div class="spotlight-body">
                 <img src="${member.logo}" alt="${member.name} logo" class="spotlight-logo">
                 <div class="spotlight-info">
+                    <p><strong>Email:</strong> ${member.email}</p>
                     <p><strong>Phone:</strong> ${member.phoneNum}</p>
-                    <p><strong>Address:</strong> ${member.address}</p>
                     <p><strong>Website:</strong> <a href="${member.webURL}" target="_blank">${member.webURL}</a></p>
                     <p><strong>Membership Level:</strong> ${membershipMap[member.membershipLvl]}</p>
                 </div>
