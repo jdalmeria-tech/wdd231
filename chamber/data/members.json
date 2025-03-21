@@ -27,7 +27,7 @@
     "phoneNum": "(+63)927 345 6789",
     "webURL": "https://www.arratech.com",
     "img": "images/arratech.webp",
-    "membershipLvl": 1,
+    "membershipLvl": 2,
     "isActive": false,
     "tagline": "Innovating the future.",
     "email": "support@arratech.com"
@@ -71,7 +71,7 @@
     "phoneNum": "(+63)927 789 0123",
     "webURL": "https://www.angelsburger.com",
     "img": "images/angelsburger.webp",
-    "membershipLvl": 2,
+    "membershipLvl": 1,
     "isActive": true,
     "tagline": "Burgers made with love.",
     "email": "support@angelsburger.com"
