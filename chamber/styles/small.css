@@ -244,6 +244,9 @@ footer .container {
 }
 /* the above is the directory page, this where we started all */
 /* this is for the home page */
+h2 {
+  font-size: 1.3rem;
+}
 div {
   position: relative; 
 }
