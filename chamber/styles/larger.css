@@ -51,6 +51,22 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .spotlight-card {
+    padding: 1.5rem;
+  }
+
+  .spotlight-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .spotlight-header p {
+    font-size: 1.2rem;
+  }
+
+  .spotlight-details p {
+    font-size: 1rem;
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;
