@@ -384,7 +384,7 @@ div picture img {
 .spotlight-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    gap: .9rem;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -399,13 +399,19 @@ div picture img {
     flex-direction: column;
     overflow: hidden;
     text-align: left;
-    padding: 1rem;
+    padding:0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 .spotlight-header {
     background-color: var(--txt-color);
-    margin-bottom: 1rem;
+   /* Round the top-right corner */
+    padding: 1rem; /* Add padding for better spacing */
+    margin-bottom: .5rem;
+    width: 100%; /* Ensure it spans the full width of the card */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center;
 }
 
 .spotlight-header h3 {
@@ -423,7 +429,8 @@ div picture img {
 .spotlight-body {
     display: flex;
     align-items: center; /* Align logo and labels vertically */
-    gap: 1rem; /* Add decent spacing between logo and labels */
+    gap: .3rem; /* Add decent spacing between logo and labels */
+    margin-bottom: .5rem;
 }
 
 .spotlight-logo {
@@ -432,6 +439,7 @@ div picture img {
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0; /* Prevent the logo from shrinking */
+    padding: .5rem;
 }
 
 .spotlight-details {

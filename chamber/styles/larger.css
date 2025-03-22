@@ -76,6 +76,10 @@
     height: 100px;
   }
 
+  .spotlight-header {
+    padding: 1.5rem; /* Slightly larger padding for larger screens */
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;
