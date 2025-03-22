@@ -49,35 +49,81 @@
   /* spotlight cards */
   .spotlight-container {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; /* Match smaller screen gap */
   }
 
   .spotlight-card {
-    padding: 1.5rem;
-  }
-
-  .spotlight-header h3 {
-    font-size: 1.5rem;
-  }
-
-  .spotlight-header p {
-    font-size: 1.2rem;
-  }
-
-  .spotlight-details p {
-    font-size: 1rem;
-  }
-
-  .spotlight-body {
-    gap: 1.5rem; /* Increase spacing slightly for larger screens */
-  }
-
-  .spotlight-logo {
-    width: 100px; /* Slightly larger logo for larger screens */
-    height: 100px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    padding: 0; /* Match smaller screen padding */
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .spotlight-header {
-    padding: 1.5rem; /* Slightly larger padding for larger screens */
+    background-color: var(--txt-color);
+    padding: 1rem; /* Match smaller screen padding */
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .spotlight-header h3 {
+    font-size: 1.2rem; /* Match smaller screen font size */
+    margin: 0;
+    color: var(--bg-color);
+  }
+
+  .spotlight-header p {
+    font-size: 1rem; /* Match smaller screen font size */
+    margin: 0.5rem 0 0;
+    color: var(--highlight-color);
+  }
+
+  .spotlight-body {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem; /* Match smaller screen gap */
+    margin-bottom: 0.5rem;
+  }
+
+  .spotlight-logo {
+    width: 80px; /* Match smaller screen size */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding: 0.5rem;
+  }
+
+  .spotlight-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Match smaller screen gap */
+  }
+
+  .spotlight-details p {
+    margin: 0;
+    font-size: 0.9rem; /* Match smaller screen font size */
+    word-wrap: break-word;
+  }
+
+  .spotlight-details a {
+    color: var(--txt-color);
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .spotlight-details a:hover {
+    text-decoration: underline;
   }
 
   /* footer section */
