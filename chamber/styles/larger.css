@@ -60,16 +60,16 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    text-align: center; /* Center text */
-    padding: 0; /* Match smaller screen padding */
+    text-align: center; 
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
   }
 
   .spotlight-header {
     background-color: var(--txt-color);
-    padding: 1rem; /* Match smaller screen padding */
+    padding: 1rem; 
     margin-bottom: 0.5rem;
     width: 100%;
     box-sizing: border-box;
@@ -77,47 +77,48 @@
   }
 
   .spotlight-header h3 {
-    font-size: 1.2rem; /* Match smaller screen font size */
+    font-size: 1.2rem; 
     margin: 0;
     color: var(--bg-color);
   }
 
   .spotlight-header p {
-    font-size: 1rem; /* Match smaller screen font size */
+    font-size: 1rem;
     margin: 0.5rem 0 0;
     color: var(--highlight-color);
   }
 
   .spotlight-body {
-    display: flex; /* Keep logo and text in one line */
-    flex-direction: row; /* Align items horizontally */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    gap: 1rem; /* Adjust gap for spacing */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 1rem; 
   }
 
   .spotlight-logo {
-    width: 80px; /* Match smaller screen size */
-    height: 80px;
-    border-radius: 50%;
+    width: 90px; 
+    height: 90px;
+    border-radius: 15%;
     object-fit: cover;
     flex-shrink: 0;
-    padding: 0.5rem;
-    margin: 0 auto; /* Center logo */
+    padding:0;
+    margin: .5rem;
+    box-shadow: var(--card-box-shadow);
   }
 
   .spotlight-details {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Match smaller screen gap */
-    align-items: flex-start; /* Align text content to the left of the logo */
-    text-align: left; /* Ensure text alignment remains left */
+    gap: 0.5rem; 
+    align-items: flex-start; 
+    text-align: left; 
   }
 
   .spotlight-details p {
     margin: 0;
-    font-size: 0.9rem; /* Match smaller screen font size */
+    font-size: 0.9rem;
     word-wrap: break-word;
   }
 
