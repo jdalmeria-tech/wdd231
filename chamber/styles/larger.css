@@ -60,10 +60,11 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    text-align: left;
+    text-align: center; /* Center text */
     padding: 0; /* Match smaller screen padding */
     margin: 0;
     box-sizing: border-box;
+    align-items: center; /* Center content horizontally */
   }
 
   .spotlight-header {
@@ -88,10 +89,11 @@
   }
 
   .spotlight-body {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem; /* Match smaller screen gap */
-    margin-bottom: 0.5rem;
+    display: flex; /* Keep logo and text in one line */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    gap: 1rem; /* Adjust gap for spacing */
   }
 
   .spotlight-logo {
@@ -101,6 +103,7 @@
     object-fit: cover;
     flex-shrink: 0;
     padding: 0.5rem;
+    margin: 0 auto; /* Center logo */
   }
 
   .spotlight-details {
@@ -108,6 +111,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem; /* Match smaller screen gap */
+    align-items: flex-start; /* Align text content to the left of the logo */
+    text-align: left; /* Ensure text alignment remains left */
   }
 
   .spotlight-details p {
