@@ -67,6 +67,15 @@
     font-size: 1rem;
   }
 
+  .spotlight-body {
+    gap: 1.5rem; /* Increase spacing slightly for larger screens */
+  }
+
+  .spotlight-logo {
+    width: 100px; /* Slightly larger logo for larger screens */
+    height: 100px;
+  }
+
   /* footer section */
   footer .container {
     flex-direction: row;

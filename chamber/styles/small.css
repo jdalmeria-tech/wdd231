@@ -404,37 +404,38 @@ div picture img {
 }
 
 .spotlight-header {
+    background-color: var(--txt-color);
     margin-bottom: 1rem;
 }
 
 .spotlight-header h3 {
     font-size: 1.2rem;
     margin: 0;
-    color: var(--txt-color);
+    color: var(--bg-color);
 }
 
 .spotlight-header p {
     font-size: 1rem;
     margin: 0.5rem 0 0;
-    color: var(--secondary-color);
+    color: var(--highlight-color);
 }
 
 .spotlight-body {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center; /* Align logo and labels vertically */
+    gap: 1rem; /* Add decent spacing between logo and labels */
 }
 
 .spotlight-logo {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin: 0 auto;
+    width: 80px; /* Make the logo smaller */
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 .spotlight-details {
+    flex: 1; /* Allow labels to take up remaining space */
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -447,7 +448,7 @@ div picture img {
 }
 
 .spotlight-details a {
-    color: var(--secondary-color);
+    color: var(--txt-color);
     text-decoration: none;
     word-break: break-word;
 }
