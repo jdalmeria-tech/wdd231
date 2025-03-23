@@ -13,7 +13,7 @@
   --primary-color:#acb8f0;
   --secondary-color: #8093e9;
   --bg-color: #ffffff;
-  --txt-color: #1a1a1a;
+  --txt-color: #2e2e2e;
   --highlight-color: #ffd000;
   --header-padding: 1rem;
   --header-font-size: 0.85rem;
@@ -89,12 +89,12 @@ ul.menuLinks li a {
 
 ul li.current-menu-item a {
   color: var(--highlight-color);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #animateMe.open li a:hover {
   color: var(--highlight-color);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 ul.menuLinks {
@@ -236,7 +236,7 @@ footer .container {
 }
 
 .footer-content ul a:hover {
-  color: black;
+  color: var(--bg-color);
 }
 
 .footer-content li {
@@ -341,7 +341,7 @@ div picture img {
   flex-shrink: 0;
   box-shadow: var(--card-box-shadow);
   border-radius: 5%;
-  background-color: var(--primary-color);
+  background-color: lightgray;
 }
 
 .weather-details {
