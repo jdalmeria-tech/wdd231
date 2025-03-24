@@ -121,7 +121,7 @@ h2 {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -213,11 +213,64 @@ h2 {
   text-align: center;
   border-radius: 4px;
   background-color: #e0e0e0;
+  cursor: pointer;
 }
 
 .course.completed {
   background-color: #6b3524;
   color: var(--text-color);
+}
+
+.course.completed:hover {
+  background-color: var(--primary-color);
+}
+
+.course:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+/* Modal Styles */
+dialog#course-details {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--text-color); 
+  color: var(--secondary-color); 
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog#course-details::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: relative;
+}
+
+#modalTitle {
+  font-size: 1.2rem;
+}
+
+.modal-content button#closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.modal-content button#closeModal:hover {
+  color: darkred; /* Add hover effect for better UX */
 }
 
 /* Footer Styles */
@@ -259,7 +312,7 @@ footer {
   }
 
   .content-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* for smaller screens */
   }
 
   .courses-grid {

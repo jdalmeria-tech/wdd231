@@ -83,16 +83,15 @@ const totalCreditsElement = document.getElementById('totalCredits');
 
 function displayCourses(courses) {
   coursesGrid.innerHTML = ''; // Clear existing courses
-  courses.forEach(course => {
+  courses.forEach((course, index) => {
     const courseCard = document.createElement('div');
     courseCard.classList.add('course');
+    courseCard.setAttribute('data-index', index); // Add data-index to map to the courses array
     if (course.completed) {
       courseCard.classList.add('completed');
     }
     courseCard.innerHTML = `
       <h3 style="text-align: center;">${course.subject} ${course.number}</h3>
-      <p style="text-align: left;"><strong>Title:</strong> ${course.title}</p>
-      <p style="text-align: left;"><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
     `;
     coursesGrid.appendChild(courseCard);
   });
@@ -123,4 +122,36 @@ filterButtons.forEach(button => {
     document.querySelector('.filter-btn.active').classList.remove('active');
     button.classList.add('active');
   });
+});
+
+const courseDetailsModal = document.getElementById('course-details');
+const modalTitle = document.getElementById('modalTitle');
+const modalCredits = document.getElementById('modalCredits');
+const modalCertificate = document.getElementById('modalCertificate');
+const modalDescription = document.getElementById('modalDescription');
+const modalTechnology = document.getElementById('modalTechnology');
+const closeModalButton = document.getElementById('closeModal');
+
+function openCourseDetails(course) {
+  modalTitle.textContent = `${course.subject} ${course.number}: ${course.title}`;
+  modalCredits.textContent = course.credits;
+  modalCertificate.textContent = course.certificate;
+  modalDescription.textContent = course.description;
+  modalTechnology.textContent = course.technology.join(', ');
+  courseDetailsModal.showModal();
+}
+
+function closeCourseDetails() {
+  courseDetailsModal.close();
+}
+
+closeModalButton.addEventListener('click', closeCourseDetails);
+
+coursesGrid.addEventListener('click', (event) => {
+  const courseCard = event.target.closest('.course');
+  if (courseCard) {
+    const courseIndex = courseCard.getAttribute('data-index'); 
+    const course = courses[courseIndex];
+    openCourseDetails(course);
+  }
 });
