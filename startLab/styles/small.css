@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 
-#openButton, #closeButton {
+#openButton1, #openButton2, #openButton3, #closeButton {
   background-color: darkred;
   color: whitesmoke;
 }
