@@ -210,6 +210,13 @@ export const temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "58",
+        "name": "Guayaquil Ecuador Temple",
+        "dedicated": "August, 1999",
+        "person": "Gordon B. Hinckley",
+        "path": "guayaquil-ecuador/400x250/guayaquil-ecuador-temple-lds-884500-wallpaper.jpg"
     }
 ]
 

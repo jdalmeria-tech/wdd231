@@ -19,9 +19,18 @@ function displayItems(data) {
     const photo = document.createElement('img')
     photo.src=`${url}${x.path}`
     photo.alt=x.name
-
+    // add event listener to each div on the page
+    photo.addEventListener('click', () => showStuff(x));
     showHere.appendChild(photo)
   }) // end loop
 } // end function
 
+// start displaying all items in the JSON file
 displayItems(temples)
+
+// populate the dialog with info when image is clicked
+function showStuff(x) {
+  mytitle.innerHTML = x.name
+  myinfo.innerHTML = `Dedicated ${x.dedicated} by ${x.person} as temple number ${x.number}`
+  mydialog.showModal()
+}
