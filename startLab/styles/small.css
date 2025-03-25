@@ -1,0 +1,14 @@
+*{box-sizing: border-box;}
+
+#openButton, #closeButton {
+  background-color: darkred;
+  color: whitesmoke;
+}
+
+#dialogBox {
+  background-color: beige;
+}
+
+::backdrop {
+  background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
