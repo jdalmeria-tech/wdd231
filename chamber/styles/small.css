@@ -564,3 +564,7 @@ div.form {
   align-items: flex-start;
   padding: 1rem;
 }
+
+.form h2 {
+  margin-bottom: 1rem; /* Add spacing below the title */
+}
