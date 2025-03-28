@@ -533,8 +533,8 @@ form.designOne textarea {
 form.designOne input:focus,
 form.designOne select:focus,
 form.designOne textarea:focus {
-  outline: 2px solid var(--highlight-color);
-  box-shadow: 0 0 5px var(--highlight-color);
+  outline: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
 }
 
 .designOne input:required {
