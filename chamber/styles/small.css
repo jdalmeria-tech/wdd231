@@ -573,3 +573,22 @@ div.form {
 .form h2 {
   margin-bottom: 1rem; /* Add spacing below the title */
 }
+
+/* thankyou page results below this */
+#thankyouPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  border: 5px solid var(--secondary-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  font-size: 1rem;
+  line-height: 1.5;
+}
