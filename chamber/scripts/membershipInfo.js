@@ -48,7 +48,7 @@ function displayMembershipLevels(data) {
     learnMoreButton.addEventListener('click', () => {
       mytitle.textContent = level.level;
       myinfo.innerHTML = `
-        <p><strong>Cost:</strong> ${level.cost}</p>
+        
         <p><strong>Benefits:</strong></p>
         <ul>
           ${Object.keys(level)
@@ -56,6 +56,7 @@ function displayMembershipLevels(data) {
             .map(key => `<li>${level[key]}</li>`)
             .join('')}
         </ul>
+        <p><strong>Cost:</strong> ${level.cost}</p>
       `;
       mydialog.showModal();
     });
