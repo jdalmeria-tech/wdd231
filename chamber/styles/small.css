@@ -603,7 +603,7 @@ div.form {
 /* membership div */
 .membershipCards {
   padding: 1rem;
-  animation: slideInFromRight 1s ease-out; /* Apply slide-in animation */
+  animation: slideInFromRight 1.8s ease-out; /* Apply slide-in animation */
 }
 
 /* membership cards styling */
@@ -653,14 +653,14 @@ div.form {
   }
 }
 
-/* Keyframes for slide-in animation */
+/* Keyframes for slide-in animation from the top */
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
