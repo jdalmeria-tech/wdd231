@@ -646,6 +646,12 @@ dialog#mydialog {
   transform: translate(-50%, -50%);
 }
 
+dialog#mydialog div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 dialog#mydialog h3 {
   margin: 0;
   font-size: 1.5rem;
@@ -669,6 +675,7 @@ dialog#mydialog button {
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: auto; /* Ensure the button is pushed to the right */
 }
 
 dialog#mydialog button:hover {
