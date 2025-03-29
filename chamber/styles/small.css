@@ -496,6 +496,13 @@ div picture img {
 }
 
 /* join page */
+div.joinPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
 
 /* form styling */
 form.designOne {
