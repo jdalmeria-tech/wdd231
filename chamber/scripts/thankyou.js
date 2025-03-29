@@ -9,3 +9,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // display the results from the form application
 const myInfo = new URLSearchParams(window.location.search)
+console.log(myInfo);
