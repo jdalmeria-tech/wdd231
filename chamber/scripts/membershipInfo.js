@@ -20,7 +20,7 @@ function displayMembershipLevels(data) {
     card.style.display = 'flex';
     card.style.flexDirection = 'column';
     card.style.alignItems = 'center';
-    card.style.border = '3px solid var(--secondary-color)';
+    card.style.border = '5px solid var(--secondary-color)';
     card.style.padding = '1rem';
     card.style.margin = '0.5rem 0';
     card.style.borderRadius = '8px';

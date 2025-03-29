@@ -644,7 +644,7 @@ div.form {
   align-items: center;
   margin: 1rem 0;
   padding: 1rem;
-  border: 5px solid black; /* Initial border color */
+  border: 5px solid var(--txt-color); /* Initial border color */
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   text-align: center;
