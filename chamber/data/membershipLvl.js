@@ -10,7 +10,7 @@ export const memberLevels = [
     "benefit1": "You'll get a nice plaque with the Barangay Captain's stamp on it",
     "benefit2": "You'll get a free ride during the yearly festival",
     "benefit3": "You'll get a discount if you ride affiliated modern jeepnies",
-    "cost": 99
+    "cost": "99 Php"
   },
   {
     "level": "Silver Membership",
@@ -18,7 +18,7 @@ export const memberLevels = [
     "benefit2": "You'll get a free ride during the yearly festival",
     "benefit3": "You'll get a discount if you ride affiliated modern jeepnies",
     "benefit4": "Your business will be featured in the home page",
-    "cost": 199
+    "cost": "199 Php"
   },
   {
     "level": "Gold Membership",
@@ -27,6 +27,6 @@ export const memberLevels = [
     "benefit3": "You'll get a discount if you ride affiliated modern jeepnies",
     "benefit4": "Your business will be featured in the home page",
     "benefit5": "Free tickets during local sport events",
-    "cost": 299
+    "cost": "299 Php"
   }
 ]
