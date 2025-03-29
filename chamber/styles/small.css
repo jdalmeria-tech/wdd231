@@ -710,6 +710,7 @@ dialog#mydialog {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: left; /* Ensure all text inside the modal is left-aligned */
 }
 
 dialog#mydialog div {
