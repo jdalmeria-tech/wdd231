@@ -592,5 +592,91 @@ div.form {
   font-size: 1rem;
   line-height: 1.5;
 }
+/* membership div */
+.membershipCards {
+  padding: 1rem;
+}
+/* membership cards styling */
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  text-align: center;
+}
 
-/* modal display below this */
+.membership-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.membership-card button {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.membership-card button:hover {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Modal styling */
+dialog#mydialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--card-box-shadow);
+  padding: 1rem;
+  max-width: 400px;
+  width: 90%;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog#mydialog h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+dialog#mydialog p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+dialog#mydialog ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+dialog#mydialog button {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+dialog#mydialog button:hover {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Backdrop styling */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
