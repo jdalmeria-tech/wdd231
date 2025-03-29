@@ -588,8 +588,8 @@ div.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left; 
-  margin: 0 auto; 
+  text-align: left;
+  margin: 1rem;
   padding: 1rem;
   max-width: 600px;
   background-color: var(--bg-color);
@@ -597,11 +597,8 @@ div.form {
   border: 5px solid var(--secondary-color);
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
-  position: relative; 
-  top: 50%; /* moves the div down 50% of the viewport height */
-  transform: translateY(-100%); /* centers the div vertically */
 }
 /* membership div */
 .membershipCards {
