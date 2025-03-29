@@ -5,8 +5,23 @@
 
   /* join page */
   div.joinPage {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: start;
+    padding: 2rem;
+  }
+
+  div.form {
+    grid-column: span 1;
+  }
+
+  div.membershipCards {
+    grid-column: span 1;
+  }
+
+  #memberCards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -190,6 +205,10 @@
 
   .homepage-grid .spotlights {
     grid-column: span 3; 
+  }
+
+  #memberCards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
