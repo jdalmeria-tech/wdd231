@@ -604,10 +604,11 @@ div.form {
   align-items: center;
   margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid var(--secondary-color);
+  border: 5px solid black; /* Initial border color */
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   text-align: center;
+  animation: borderColorAnimation 3s infinite alternate; /* Apply animation */
 }
 
 .membership-card h3 {
@@ -628,6 +629,19 @@ div.form {
   background-color: var(--bg-color);
   color: var(--secondary-color);
   box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Keyframes for border color animation */
+@keyframes borderColorAnimation {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: var(--highlight-color);
+  }
+  100% {
+    border-color: var(--txt-color);
+  }
 }
 
 /* Modal styling */
