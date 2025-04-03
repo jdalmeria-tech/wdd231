@@ -38,7 +38,6 @@
   <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/title.js" defer></script>
 </head>
 
 <body>
@@ -51,63 +50,14 @@
     <ul class="menuLinks">
       <li><a href="index.html" title="Home" tabindex="0">Home</a></li>
       <li><a href="directory.html" title="Directory" tabindex="0">Directory</a></li>
-      <li class="current-menu-item"><a href="#" title="Join" tabindex="0">Join</a></li>
-      <li><a href="discover.html" title="Discover" tabindex="0">Discover</a></li>
+      <li><a href="join.html" title="Join" tabindex="0">Join</a></li>
+      <li class="current-menu-item"><a href="#" title="Discover" tabindex="0">Discover</a></li>
     </ul>
   </nav>
   <main>
-    <h1 tabindex="0">Join</h1>
-    <div class="joinPage">
-      <div class="form">
-        <form method="GET" action="thankyou.html" class="designOne">
-          <h2 tabindex="0">Membership Application Form</h2>
-          <label>First Name 
-            <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
-          </label>
-          <label>Last Name 
-            <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-          </label>
-          <label>Organizational Title 
-            <input type="text" name="org-title" title="Your Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
-          </label>
-          <label>Email 
-            <input type="email" name="email" required placeholder="example@email.com" title="Your Email Address" autocomplete="email">
-          </label>
-          <label>Mobile Phone 
-            <input type="tel" name="phone" required title="Your Mobile Phone Number" autocomplete="tel">
-          </label>
-          <label>Business/Organization Name 
-            <input type="text" name="organization" required title="Your Business/Organization Name" autocomplete="organization">
-          </label>
-          <label>Membership Level
-            <select name="membership-level" required>
-              <option value="">Select Membership Level</option>
-              <option value="NP Membership">NP Membership (No Fee)</option>
-              <option value="Bronze Membership">Bronze Membership</option>
-              <option value="Silver Membership">Silver Membership</option>
-              <option value="Gold Membership">Gold Membership</option>
-            </select>
-          </label>
-          <label>Business/Organization Description
-            <textarea name="org-description" title="Describe Your Business/Organization"></textarea>
-          </label>
-          <input type="hidden" name="timestamp" id="timestamp" value="">
-          <input type="submit" value="Apply for Membership">
-        </form>
-      </div>
-      <div class="membershipCards">
-        <h2 tabindex="0">Membership Levels</h2>
-        <div id="memberCards">
-          <!-- Membership cards will be dynamically loaded here -->
-        </div>
-        <dialog id="mydialog">
-          <div>
-            <h3>Sample Title</h3>
-            <button>X</button>
-          </div>
-          <p></p>
-        </dialog>
-      </div>
+    <h1 tabindex="0">Discover</h1>
+    <div id="discover" tabindex="0">
+      
     </div>
   </main>
   <footer>
@@ -139,6 +89,5 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/membershipInfo.js" type="module"></script>
 </body>
 </html>
