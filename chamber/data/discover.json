@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Active Fitness Gym",
+    "address": "1318, NLT Bldg, Miñoza st, Cebu City, 6000 Cebu",
+    "description": "Go to gym in Talamban area.",
+    "url": "https://www.facebook.com/Activefitnessgymcebucity/"
+  },
+  {
+    "name": "Bacayan and Talamban Ward",
+    "address": "Gov. M. Cuenco Ave, Cebu City, 6000 Cebu",
+    "description": "Nearest place to play basketball.",
+    "url": "https://www.facebook.com/groups/183160828910245"
+
+  },
+  {
+    "name": "Maboy's",
+    "address": "9WC8+JXF, Meñoza street, North Agora, Cebu City, 6000 Cebu",
+    "description": "Unlimited rice plus barbeque.",
+    "url": "https://www.facebook.com/maboysbbq/"
+  },
+  {
+    "name": "PapaV's Good Food Cebu",
+    "address": "Located in Time Square 2nd Floor",
+    "description": "Authentic Mediterranean Restaurant in town.",
+    "url": "https://www.instagram.com/papavgoodfood/"
+  },
+  {
+    "name": "Don Macchiatos Talamban Branch",
+    "address": "9WC9+5RR Hi-way SOS, Cebu City, 6000 Cebu",
+    "description": "Affordable drinks, please choose the non-coffee!",
+    "url": "https://www.facebook.com/p/Don-Macchiatos-Talamban-Branch-100086982445233/"
+  },
+  {
+    "name": "Cafe Selva",
+    "address": "Building 777, Trieste, Gov. M. Cuenco Ave, Cebu City, Cebu",
+    "description": "Quality food and a neat place to work remotely.",
+    "url": "https://www.facebook.com/@selvacebu/"
+  },
+  {
+    "name": "The Hideout Cafe Cebu",
+    "address": "153 H Abellana, Mandaue City, 6014 Cebu",
+    "description": "Good place to play board games plus their menu is worth it!",
+    "url": "https://www.instagram.com/thehideoutcafecebu/"
+  },
+  {
+    "name": "Jollibee",
+    "address": "Gov. Cuenco Ave, Nasipit Road",
+    "description": "Juicy and Tender Chicken joy!",
+    "url": "https://www.foodpanda.ph/restaurant/q5yz/jollibee-cebu-talamban"
+
+  }
+]
