@@ -2,10 +2,10 @@ import {places} from "../data/places.mjs"
 // console.log(places); always test before starting to display cards
 
 const showHere = document.querySelector("#discover") // Changed querySelectorAll to querySelector
-const modal = document.querySelector("#modal");
-const modalTitle = document.querySelector("#modal-title");
-const modalDescription = document.querySelector("#modal-description");
-const closeModalButton = document.querySelector(".close-modal");
+const dialog = document.querySelector("#mydialog");
+const dialogTitle = document.querySelector("#dialog-title");
+const dialogDescription = document.querySelector("#dialog-description");
+const closeDialogButton = document.querySelector("#close-dialog");
 
 // loop thru the array of json items
 function displayItems(places) {
@@ -40,7 +40,7 @@ function displayItems(places) {
     const learnMoreButton = document.createElement('button');
     learnMoreButton.innerText = "Learn More";
     learnMoreButton.addEventListener('click', () => {
-      openModal(x.name, x.more);
+      openDialog(x.name, x.more);
     });
     card.appendChild(learnMoreButton);
 
@@ -48,16 +48,14 @@ function displayItems(places) {
   }); // end loop
 } // end of function
 
-function openModal(title, description) {
-  modalTitle.innerText = title;
-  modalDescription.innerText = description;
-  modal.classList.add("show");
-  modal.setAttribute("aria-hidden", "false");
+function openDialog(title, description) {
+  dialogTitle.innerText = title;
+  dialogDescription.innerText = description;
+  dialog.showModal();
 }
 
-closeModalButton.addEventListener('click', () => {
-  modal.classList.remove("show");
-  modal.setAttribute("aria-hidden", "true");
+closeDialogButton.addEventListener('click', () => {
+  dialog.close();
 });
 
 // display all items in the json file
