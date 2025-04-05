@@ -1,5 +1,5 @@
 import {places} from "../data/places.mjs"
-// console.log(places); not needed it works already
+// console.log(places); always test before starting to display cards
 
 const showHere = document.querySelector("#discover") // Changed querySelectorAll to querySelector
 
@@ -7,28 +7,34 @@ const showHere = document.querySelector("#discover") // Changed querySelectorAll
 function displayItems(places) {
   places.forEach(x => {
     // build the card element
-    const card = document.createElement('div')
+    const card = document.createElement('div');
     // build photo element
-    const photo = document.createElement('img')
-    photo.src = x.img
-    photo.alt = x.name
-    card.appendChild(photo)
-    // build title element
-    const title = document.createElement('h2')
-    title.innerText = x.name
-    card.appendChild(title)
-    // build address element
-    const address = document.createElement('address')
-    address.innerText = x.address
-    card.appendChild(address)
-    // build description element
-    const desc = document.createElement('p')
-    desc.innerText = x.description
-    card.appendChild(desc)
+    const photo = document.createElement('img');
+    photo.src = x.img;
+    photo.alt = x.name;
+    card.appendChild(photo);
 
-    showHere.appendChild(card)
-  }) //end loop
-} //end of function
+    // build title element
+    const title = document.createElement('h2');
+    title.innerText = x.name;
+    title.style.textAlign = "left"; // uniform text alignment
+    card.appendChild(title);
+
+    // build address element
+    const address = document.createElement('address');
+    address.innerText = x.address;
+    address.style.textAlign = "left"; // uniform text alignment
+    card.appendChild(address);
+
+    // build description element
+    const desc = document.createElement('p');
+    desc.innerText = x.description;
+    desc.style.textAlign = "left"; // uniform text alignment
+    card.appendChild(desc);
+
+    showHere.appendChild(card);
+  }); // end loop
+} // end of function
 
 // display all items in the json file
 displayItems(places)
