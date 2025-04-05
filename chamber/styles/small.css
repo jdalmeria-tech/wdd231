@@ -783,8 +783,10 @@ dialog::backdrop {
 }
 
 #discover div img {
- width: 100%;
- grid-area: photo;
+  width: 100%;
+  height: 250px; /* Explicit height while maintaining aspect ratio */
+  object-fit: cover; /* Ensures the aspect ratio is respected */
+  grid-area: photo;
 }
 
 #discover div p {
@@ -801,15 +803,19 @@ dialog::backdrop {
   border: 3px solid var(--txt-color);
   background-color: var(--txt-color);
   color: var(--bg-color);
-  border-radius: 8px;
+  font-weight: bold;
+  border-radius: 7px;
   padding: .4rem;
   margin: .5rem;
+  max-width: 100%;
+  width: 270px;
 }
 
 #discover div button:hover {
   border: 3px solid var(--txt-color);
   background-color: var(--bg-color);
   color: var(--txt-color);
+  font-weight: bolder;
 }
 
 .message-track {
