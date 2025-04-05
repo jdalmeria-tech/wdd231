@@ -36,8 +36,9 @@ function displayMembershipLevels(data) {
     // Add "Learn More" button
     const learnMoreButton = document.createElement('button');
     learnMoreButton.textContent = 'Learn More';
-    learnMoreButton.style.backgroundColor = 'var(--secondary-color)';
-    learnMoreButton.style.color = 'var(--bg-color)';
+    learnMoreButton.style.backgroundColor = 'var(--primary-color)';
+    learnMoreButton.style.color = 'var(--txt-color)';
+    learnMoreButton.style.fontWeight = 'bold';
     learnMoreButton.style.padding = '0.5rem 1rem';
     learnMoreButton.style.border = 'none';
     learnMoreButton.style.borderRadius = '5px';

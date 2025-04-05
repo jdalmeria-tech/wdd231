@@ -25,6 +25,8 @@ function displayItems(places) {
     const card = document.createElement('div');
     // build photo element
     const photo = document.createElement('img');
+    photo.width = 370;
+    photo.height = 250;
     photo.src = x.img;
     photo.alt = x.name;
     card.appendChild(photo);

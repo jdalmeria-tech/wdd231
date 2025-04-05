@@ -206,6 +206,7 @@ footer {
   padding: var(--footer-padding);
   width: 100%;
   margin-top: auto;
+  z-index: 1;
 }
 
 /* Base styles for small screens */
@@ -634,7 +635,7 @@ div.form {
 /* membership div */
 .membershipCards {
   padding: 1rem;
-  animation: slideInFromRight 1.8s ease-out; /* Apply slide-in animation */
+  animation: slideInFromRight 1.2s ease-out; /* Apply slide-in animation */
 }
 
 /* membership cards styling */
@@ -648,7 +649,7 @@ div.form {
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   text-align: center;
-  animation: borderColorAnimation 3s infinite alternate; /* Apply animation */
+  animation: borderColorAnimation 2s infinite alternate; /* Apply animation */
 }
 
 .membership-card h3 {
@@ -656,18 +657,7 @@ div.form {
   margin-bottom: 0.5rem;
 }
 
-.membership-card button {
-  background-color: var(--secondary-color);
-  color: var(--bg-color);
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .membership-card button:hover {
-  background-color: var(--bg-color);
-  color: var(--secondary-color);
   box-shadow: 0 0 5px var(--secondary-color);
 }
 
@@ -757,6 +747,12 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5); 
 }
 /* discover page */
+/* reserve space for displaying the dynamic message */
+#discover {
+  min-height: 630px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
+}
 #discover div {
   margin: 1rem 8px;
   border: 1px solid var(--txt-color);
@@ -784,8 +780,8 @@ dialog::backdrop {
 
 #discover div img {
   width: 100%;
-  height: 250px; /* Explicit height while maintaining aspect ratio */
-  object-fit: cover; /* Ensures the aspect ratio is respected */
+  height: 250px; 
+  object-fit: cover; 
   grid-area: photo;
 }
 
@@ -823,5 +819,10 @@ dialog::backdrop {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+/* reserve space for displaying the dynamic message */
+.user-track {
+  min-height: 50px;
 }
 
