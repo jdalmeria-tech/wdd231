@@ -759,19 +759,38 @@ dialog::backdrop {
 /* discover page */
 #discover div {
   margin: 1rem 8px;
-  border: 2px solid var(--txt-color);
+  border: 1px solid var(--txt-color);
   background-color: #eeee;
   border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+  "name"
+  "photo"
+  "description"
+  "address";
 }
 
 #discover div h2,
 #discover div p,
 #discover div address {
-  margin: 1rem 10px;
+  margin: .8rem 10px;
+}
+
+#discover div h2 {
+  grid-area: name;
 }
 
 #discover div img {
  width: 100%;
+ grid-area: photo;
 }
 
+#discover div p {
+  grid-area: description;
+}
+
+#discover div address {
+  grid-area: address;
+}
 
