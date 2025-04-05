@@ -784,8 +784,6 @@ dialog::backdrop {
 
 #discover div img {
  width: 100%;
- width: 370px;
- height: 246.66px;
  grid-area: photo;
 }
 
