@@ -768,7 +768,8 @@ dialog::backdrop {
   "name"
   "photo"
   "description"
-  "address";
+  "address"
+  "button";
 }
 
 #discover div h2,
@@ -792,5 +793,24 @@ dialog::backdrop {
 
 #discover div address {
   grid-area: address;
+}
+
+#discover div button {
+  grid-area: button;
+  transition: background-color 0.3s ease;
+  border: 3px solid var(--txt-color);
+  background-color: var(--txt-color);
+  color: var(--bg-color);
+  border-radius: 8px;
+  padding: .4rem;
+  margin: .5rem;
+}
+
+#discover div button:hover {
+  border: 3px solid var(--txt-color);
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+
+
 }
 
