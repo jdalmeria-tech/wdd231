@@ -1,37 +1,64 @@
-:root {
-  --primary-color: #ffffff;
-  --secondary-color: #8093e9; 
-  --text-color: #2e2e2e; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  background-color: #F5F5F5;
+  margin: 0 10%;
 }
 
 header {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  padding: .5rem;
-  border-bottom: 4px solid var(--secondary-color);
-}
-
-header h2 {
-  color: var(--text-color);
-}
-
-h2 {
-  color: var(--secondary-color);
-  font-weight: 600;
-}
-
-
-footer {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  background-color: #1B4080;
+  color: #ffffff;
+  padding: 1em;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+footer {
+  padding: 1em;
+  background-color: #1B4080;
+  color: #ffffff;
+  text-align: center;
+}
+
+section {
+  margin: 2em 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
 }
