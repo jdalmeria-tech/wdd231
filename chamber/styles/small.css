@@ -102,7 +102,7 @@ ul.menuLinks {
 }
 /* CSS for the open class (button) */
 #myButton.open::before {
-  content: "X";
+  content: "x";
 }
 
 nav {
@@ -160,6 +160,7 @@ div.menu button img {
   gap: 1rem;
   padding: 2rem;
   justify-items: center;
+  min-height: 600px;
 }
 
 #cards.grid .card {
