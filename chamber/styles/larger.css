@@ -23,6 +23,19 @@
   #memberCards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* discover page */
+  #discover div {
+    display: grid;
+    grid-template-areas:
+    "photo name"
+    "photo description"
+    "photo address";
+  }
+
+  #discover div img {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 63rem) {
@@ -209,6 +222,15 @@
 
   #memberCards {
     grid-template-columns: repeat(3, 1fr);
+  }
+  /* discover page */
+  #discover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #discover div {
+    text-align: left;
   }
 }
 
