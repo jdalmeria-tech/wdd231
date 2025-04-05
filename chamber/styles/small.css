@@ -810,7 +810,12 @@ dialog::backdrop {
   border: 3px solid var(--txt-color);
   background-color: var(--bg-color);
   color: var(--txt-color);
+}
 
-
+.message-track {
+  margin: 0.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
