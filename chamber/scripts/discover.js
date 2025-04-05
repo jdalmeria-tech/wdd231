@@ -7,6 +7,17 @@ const dialogTitle = document.querySelector("#dialog-title");
 const dialogDescription = document.querySelector("#dialog-description");
 const closeDialogButton = document.querySelector("#close-dialog");
 
+// preload images
+function preloadImages(places) {
+  places.forEach(x => {
+    const img = new Image();
+    img.src = x.img;
+  });
+}
+
+// preload images before displaying items
+preloadImages(places);
+
 // loop thru the array of json items
 function displayItems(places) {
   places.forEach(x => {
