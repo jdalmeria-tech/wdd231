@@ -756,6 +756,47 @@ dialog#mydialog button:hover {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5); 
 }
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  border-radius: 8px;
+  box-shadow: var(--card-box-shadow);
+  padding: 1rem;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.close-modal {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--txt-color);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal::backdrop {
+  background-color: rgba(230, 105, 247, 0.5);
+}
+
 /* discover page */
 #discover div {
   margin: 1rem 8px;
