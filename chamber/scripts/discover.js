@@ -16,6 +16,7 @@ function displayItems(places) {
     const photo = document.createElement('img');
     photo.src = x.img;
     photo.alt = x.name;
+    photo.loading = "lazy";
     card.appendChild(photo);
 
     // build title element
