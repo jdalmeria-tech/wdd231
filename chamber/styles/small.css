@@ -751,7 +751,6 @@ dialog::backdrop {
 #discover {
   min-height: 630px;
   content-visibility: auto;
-  contain-intrinsic-size: 1px 500px;
 }
 #discover div {
   margin: 1rem 8px;
