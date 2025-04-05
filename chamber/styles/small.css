@@ -752,8 +752,26 @@ dialog#mydialog button:hover {
   border: 3px solid var(--highlight-color);
   box-shadow: 0 0 5px var(--txt-color);
 }
-
 /* Backdrop styling */
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5); 
 }
+/* discover page */
+#discover div {
+  margin: 1rem 8px;
+  border: 2px solid var(--txt-color);
+  background-color: #eeee;
+  border-radius: 8px;
+}
+
+#discover div h2,
+#discover div p,
+#discover div address {
+  margin: 1rem 10px;
+}
+
+#discover div img {
+ width: 100%;
+}
+
+
