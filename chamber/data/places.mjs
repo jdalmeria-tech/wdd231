@@ -1,4 +1,4 @@
-[
+export const places = [
   {
     "name": "Active Fitness Gym",
     "address": "1318, NLT Bldg, Miñoza st, Cebu City, 6000 Cebu",
