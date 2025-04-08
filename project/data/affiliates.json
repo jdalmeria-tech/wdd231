@@ -1,67 +1,7 @@
 [
   {
-    "name": "Baguio City WD Employees Association",
-    "address": "456 Session Rd, Baguio City",
-    "phoneNum": "(+63)927 123 4567",
-    "img": "images/sephaya.webp",
-    "logo": "images/sephayaLogo.webp",
-    "isActive": true,
-    "tagline": "Delivering clean water to Baguio City.",
-    "email": "info@baguiowdunion.com"
-  },
-  {
-    "name": "Legazpi City WD Union of Regular Employees",
-    "address": "789 Rizal St, Legazpi City",
-    "phoneNum": "(+63)927 234 5678",
-    "img": "images/cinnamon.webp",
-    "logo": "images/nenasLogo.webp",
-    "isActive": true,
-    "tagline": "Committed to Legazpi's water needs.",
-    "email": "contact@legazpiwdunion.com"
-  },
-  {
-    "name": "Calumpit Water District Employees Union",
-    "address": "123 Poblacion Rd, Calumpit",
-    "phoneNum": "(+63)927 345 6789",
-    "img": "images/arratech.webp",
-    "logo": "images/arratechLogo.webp",
-    "isActive": true,
-    "tagline": "Ensuring water for every home in Calumpit.",
-    "email": "support@calumpitwdunion.com"
-  },
-  {
-    "name": "LWUA Emlpoyees Association for Progress",
-    "address": "456 Progress Ave, Quezon City",
-    "phoneNum": "(+63)927 456 7890",
-    "img": "images/activeFitness.webp",
-    "logo": "images/activeLogo.webp",
-    "isActive": true,
-    "tagline": "Advancing water services nationwide.",
-    "email": "hello@lwuaunion.com"
-  },
-  {
-    "name": "Naga City Water District Employees Union",
-    "address": "789 Peñafrancia St, Naga City",
-    "phoneNum": "(+63)927 567 8901",
-    "img": "images/smartsol.webp",
-    "logo": "images/smartsolLogo.webp",
-    "isActive": true,
-    "tagline": "Serving Naga City with clean water.",
-    "email": "contact@nagawdunion.com"
-  },
-  {
-    "name": "Metro Cebu Water District Employees Union",
-    "address": "123 Colon St, Cebu City",
-    "phoneNum": "(+63)927 678 9012",
-    "img": "images/marketVille.webp",
-    "logo": "images/marketLogo.webp",
-    "isActive": true,
-    "tagline": "Providing water for Metro Cebu.",
-    "email": "info@cebuwdunion.com"
-  },
-  {
     "name": "Baybay City Water District Employees Association",
-    "address": "456 Baybay Blvd, Baybay City",
+    "address": "119 E. Jacinto corner M.L. Quezon Street, Baybay, 6521, Leyte",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
     "logo": "images/burgerLogo.webp",
@@ -70,28 +10,28 @@
     "email": "support@baybaywdunion.com"
   },
   {
-    "name": "Pili Water District Employees Association",
-    "address": "789 Pili St, Pili",
-    "phoneNum": "(+63)927 789 0123",
-    "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "name": "Baguio City WD Employees Association",
+    "address": "003 Purok BWD, Utility Road, Barangay Marcoville 2600 Baguio City",
+    "phoneNum": "(+63)927 123 4567",
+    "img": "images/sephaya.webp",
+    "logo": "images/sephayaLogo.webp",
     "isActive": true,
-    "tagline": "Dedicated to water services in Pili.",
-    "email": "info@piliwdunion.com"
+    "tagline": "Delivering clean water to Baguio City.",
+    "email": "info@baguiowdunion.com"
   },
   {
-    "name": "Kidapawan Water District Employees Union",
-    "address": "123 Kidapawan Rd, Kidapawan",
-    "phoneNum": "(+63)927 789 0123",
-    "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "name": "Calumpit Water District Employees Union",
+    "address": "Serrano St, Corazon, Calumpit, 3003 Bulacan",
+    "phoneNum": "(+63)927 345 6789",
+    "img": "images/arratech.webp",
+    "logo": "images/arratechLogo.webp",
     "isActive": true,
-    "tagline": "Reliable water supply for Kidapawan.",
-    "email": "contact@kidapawanwdunion.com"
+    "tagline": "Ensuring water for every home in Calumpit.",
+    "email": "support@calumpitwdunion.com"
   },
   {
     "name": "General Santos City WD Employees Association",
-    "address": "456 GenSan Ave, General Santos City",
+    "address": "Fernandez St, General Santos City, 9500 South Cotabato",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
     "logo": "images/burgerLogo.webp",
@@ -100,8 +40,48 @@
     "email": "support@gensanwdunion.com"
   },
   {
+    "name": "Kidapawan Water District Employees Union",
+    "address": "Davao - Cotabato Rd, Kidapawan City, Cotabato",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Reliable water supply for Kidapawan.",
+    "email": "contact@kidapawanwdunion.com"
+  },
+  {
+    "name": "Legazpi City WD Union of Regular Employees",
+    "address": "Obredo-Bariada Road, Bitano, Legazpi City. ",
+    "phoneNum": "(+63)927 234 5678",
+    "img": "images/cinnamon.webp",
+    "logo": "images/nenasLogo.webp",
+    "isActive": true,
+    "tagline": "Committed to Legazpi's water needs.",
+    "email": "contact@legazpiwdunion.com"
+  },
+  {
+    "name": "LWUA Employees Association for Progress",
+    "address": "LWUA Bldg. MWSS LWUA Compound, Katipunan Ave. Diliman, Quezon City",
+    "phoneNum": "(+63)927 456 7890",
+    "img": "images/activeFitness.webp",
+    "logo": "images/activeLogo.webp",
+    "isActive": true,
+    "tagline": "Advancing water services nationwide.",
+    "email": "hello@lwuaunion.com"
+  },
+  {
+    "name": "Metro Cebu Water District Employees Union",
+    "address": "Magallanes St, Cebu City, 6000 Cebu",
+    "phoneNum": "(+63)927 678 9012",
+    "img": "images/marketVille.webp",
+    "logo": "images/marketLogo.webp",
+    "isActive": true,
+    "tagline": "Providing water for Metro Cebu.",
+    "email": "info@cebuwdunion.com"
+  },
+  {
     "name": "Metro Koronadal Employees Union",
-    "address": "789 Koronadal St, Koronadal",
+    "address": "Blk 1, Casa Subdivision, Zone 3, City of Koronadal, South Cotabato 9506",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
     "logo": "images/burgerLogo.webp",
@@ -110,8 +90,28 @@
     "email": "info@koronadalwdunion.com"
   },
   {
+    "name": "Naga City Water District Employees Union",
+    "address": "Bonifacio St, City of Naga, 6037 Cebu",
+    "phoneNum": "(+63)927 567 8901",
+    "img": "images/smartsol.webp",
+    "logo": "images/smartsolLogo.webp",
+    "isActive": true,
+    "tagline": "Serving Naga City with clean water.",
+    "email": "contact@nagawdunion.com"
+  },
+  {
+    "name": "Pili Water District Employees Association",
+    "address": " Sta. Rita Agro-Industrial Park, 4418 Camarines Sur",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Dedicated to water services in Pili.",
+    "email": "info@piliwdunion.com"
+  },
+  {
     "name": "Toledo City Water District Employees Union",
-    "address": "143 Toledo Ave, Toledo City",
+    "address": "S. Osmena St., Brgy. Sangi, Toledo City, Cebu",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
     "logo": "images/burgerLogo.webp",

@@ -202,6 +202,15 @@ div.menu button img {
 #cards.list .card img {
   display: none;
 }
+/* add alternating background colors for list view */
+#cards.list .card:nth-child(odd) {
+  background-color: var(--bg-color);
+}
+
+#cards.list .card:nth-child(even) {
+  background-color: rgba(59, 192, 188, 0.3); /* adjust the opacity by changing the alpha value (0.8 in this case) */
+  color: var(--primary-color);
+}
 /* footer */
 footer {
   color: var(--txt-color);
