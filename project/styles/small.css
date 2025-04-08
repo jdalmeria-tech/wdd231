@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+:root {
+  --primary-color:#0F2346;
+  --secondary-color: #8093e9;
+  --bg-color: #F7F7F7;
+  --txt-color: #3BC0BC;
+  --highlight-color: #A9131A;
+  --header-padding: 1rem;
+  --header-font-size: 0.85rem;
+  --header-font-weight: 700;
+  --button-padding: 0.5rem;
+  --button-bg-color: var(--bg-color);
+  --button-img-width: 2rem;
+  --button-img-height: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 8px;
+  --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --footer-padding: 0.5rem;
+  --footer-font-size: 0.8rem;
+  --footer-icon-size: 2.5rem;
+  --footer-icon-margin: 0.2rem;
+}
+
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Base styles for small screens */
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+/* header */
+header {
+  background-color: var(--primary-color);
+  padding: var(--header-padding);
+  text-align: left;
+  display: grid;
+  grid-template-columns: 44px auto 44px;
+  align-items: center;
+}
+
+header span {
+  color: var(--txt-color);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+}
+/* navigation */
+nav {
+  background-color: var(--txt-color);
+}
+
+#myButton::before {
+  content: "\2630";
+}
+
+#myButton {
+  font-size: 2.2rem;
+  background: none;
+  border: none;
+  color: var(--txt-color);
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0.25rem 2vw;
+}
+
+ul.menuLinks li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  padding: 0.75rem 2vw;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul li.current-menu-item a {
+  color: var(--bg-color);
+  background-color: var(--highlight-color);
+}
+
+#animateMe.open li a:hover {
+  color: var(--bg-color);
+  background-color: var(--highlight-color);
+}
+
+ul.menuLinks {
+  list-style-type: none;
+}
+/* CSS for the open class (button) */
+#myButton.open::before {
+  content: "x";
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+  overflow: hidden;
+}
+
+nav.open {
+  grid-template-rows: 1fr;
+}
+/* main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: .8rem 0 0 .8rem;
+}
+/* styling the grid and list button */
+div.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+div.menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  background-color: var(--button-bg-color);
+  border: none;
+  cursor: pointer;
+}
+
+div.menu button img {
+  width: var(--button-img-width);
+  height: var(--button-img-height);
+}
+/* end of styling the grid and list button */
+/* Styles for grid and list views */
+#cards.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+#cards.grid .card {
+  background-color: var(--bg-color);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  text-align: left;
+  box-shadow: var(--card-box-shadow);
+  max-width: 400px;
+  width: 100%;
+}
+
+#cards.grid .card h2, #cards.list .card h2 {
+  font-size: 1.1rem;
+}
+
+#cards.grid .card img {
+  max-width: 100%;
+  width: 365px;
+  height: 200px;
+  border-radius: var(--card-border-radius);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+#cards.list {
+  display: block;
+}
+
+#cards.list .card {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  justify-content: center;
+  text-align: left;
+}
+
+#cards.list .card img {
+  display: none;
+}
+/* footer */
+footer {
+  color: var(--txt-color);
+  background-color: var(--primary-color);
+  padding: var(--footer-padding);
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Base styles for small screens */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: var(--footer-font-size);
+}
+
+.footer-content {
+  width: 100%;
+}
+
+.footer-content ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem;
+  font-size: var(--footer-icon-size);
+}
+
+.footer-content ul a {
+  color: var(--txt-color);
+  margin: var(--footer-icon-margin);
+}
+
+.footer-content ul a:hover {
+  color: var(--bg-color);
+}
+
+.footer-content li {
+  margin: 0 0.5rem;
+}
+/* the above is the directory page, this where we started all */
+/* this is for the home page */
+h2 {
+  font-size: 1.3rem;
+}
+
+.intro-message {
+  margin: 1rem;
+}
+
+div {
+  position: relative; 
+}
+
+div picture {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+}
+
+div picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.home-action-btn {
+  position: absolute;
+  bottom: 2rem; 
+  right: 1rem;
+  background-color: var(--highlight-color);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--highlight-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* for floating effect */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+.home-action-link {
+  position: absolute;
+  bottom: 1rem; /* adjust distance from the bottom */
+  right: 1rem; /* adjust distance from the right */
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--highlight-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* for floating effect */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home-action-link:hover {
+  background-color: var(--bg-color);
+  color: var(--highlight-color);
+}
+
+/* Events Section */
+.events {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  margin: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+/* Weather Section */
+.weather-a, .weather-b {
+  padding: 1rem;
+  background-color: var(--bg-color);
+  margin: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  box-shadow: var(--card-box-shadow);
+  border-radius: 5%;
+  background-color: lightgray;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5rem;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.weather-details p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.forecast-day {
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+  border: 3px solid var(--secondary-color);
+  box-shadow: var(--card-box-shadow);
+  border-radius: 5px;
+}
+
+/* Spotlights Section */
+.spotlights {
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: .9rem;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.spotlight-card {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.spotlight-header {
+    background-color: var(--primary-color);
+   /* Round the top-right corner */
+    padding: 1rem; 
+    margin-bottom: .5rem;
+    width: 100%; /* spans the full width of the card */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.spotlight-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--txt-color);
+}
+
+.spotlight-header p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+    color: var(--bg-color);
+}
+
+.spotlight-body {
+    display: flex;
+    align-items: center; 
+    gap: .3rem; 
+    margin-bottom: .5rem;
+}
+
+.spotlight-logo {
+    width: 60px; 
+    height: 60px;
+    border-radius: 15%;
+    object-fit: cover;
+    flex-shrink: 0; 
+    padding:0;
+    margin: .5rem;
+    box-shadow: var(--card-box-shadow);
+}
+
+.spotlight-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.spotlight-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+}
+
+.spotlight-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.spotlight-details a:hover {
+    text-decoration: underline;
+}
+
+/* layout for mobile view */
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.homepage-grid > * {
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+
+.homepage-grid .events,
+.homepage-grid .weather-a,
+.homepage-grid .weather-b,
+.homepage-grid .spotlights {
+  grid-column: span 1; 
+}

@@ -1,0 +1,134 @@
+@media (min-width: 44rem) {
+  #cards.grid {
+    grid-template-columns: repeat(2, 1fr); /* two columns for medium screens */
+  }
+}
+
+@media only screen and (min-width: 63rem) {
+  /* Styles for larger screens */
+
+  /* header section and nav */
+  header span {
+    font-size: 1.5rem;
+  }
+
+  #myButton {
+    display: none;
+  }
+
+  ul.menuLinks, ul.menuLinks.open {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul.menuLinks a:hover {
+    color: var(--bg-color);
+    text-decoration: underline;
+  }
+
+  nav {
+    grid-template-rows: 1fr;
+  }
+
+  /* main */
+  /* for the cards */
+  #cards.grid {
+    grid-template-columns: repeat(3, 1fr); /* three columns for larger screens */
+  }
+
+  /* list view */
+  #cards.list .card {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  /* spotlight cards */
+  .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; /* Match smaller screen gap */
+  }
+
+  .spotlight-card {
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .spotlight-header h3 {
+    font-size: 1.2rem; 
+    margin: 0;
+  }
+
+  .spotlight-body {
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 1rem; 
+  }
+
+  .spotlight-details {
+    align-items: flex-start; 
+    text-align: left; 
+  }
+
+
+  /* footer section */
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: .1rem 2.5rem .8rem 2.5rem;
+  }
+
+  .footer-content {
+    margin: 0;
+  }
+
+  .footer-content ul {
+    justify-content: center;
+  }
+
+  /* this is the hero image */
+  div picture {
+    max-width: 100%;
+  }
+  /* layout for desktop view */
+  .homepage-grid {
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+
+  .homepage-grid > * {
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    overflow: hidden;
+  }
+
+  .homepage-grid .events {
+    grid-column: span 1; 
+  }
+
+  .homepage-grid .weather-a {
+    grid-column: span 1;
+  }
+
+  .homepage-grid .weather-b {
+    grid-column: span 1; 
+  }
+
+  .homepage-grid .spotlights {
+    grid-column: span 3; 
+  }
+}
+
