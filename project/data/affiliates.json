@@ -4,7 +4,7 @@
     "address": "119 E. Jacinto corner M.L. Quezon Street, Baybay, 6521, Leyte",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/baybaywd.webp",
     "isActive": true,
     "tagline": "Clean water for Baybay City residents.",
     "email": "support@baybaywdunion.com"
@@ -14,7 +14,7 @@
     "address": "003 Purok BWD, Utility Road, Barangay Marcoville 2600 Baguio City",
     "phoneNum": "(+63)927 123 4567",
     "img": "images/sephaya.webp",
-    "logo": "images/sephayaLogo.webp",
+    "logo": "images/baguiowd.webp",
     "isActive": true,
     "tagline": "Delivering clean water to Baguio City.",
     "email": "info@baguiowdunion.com"
@@ -24,7 +24,7 @@
     "address": "Serrano St, Corazon, Calumpit, 3003 Bulacan",
     "phoneNum": "(+63)927 345 6789",
     "img": "images/arratech.webp",
-    "logo": "images/arratechLogo.webp",
+    "logo": "images/calumpitwd.webp",
     "isActive": true,
     "tagline": "Ensuring water for every home in Calumpit.",
     "email": "support@calumpitwdunion.com"
@@ -34,7 +34,7 @@
     "address": "Fernandez St, General Santos City, 9500 South Cotabato",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/gensanwd.webp",
     "isActive": true,
     "tagline": "Clean water for General Santos City.",
     "email": "support@gensanwdunion.com"
@@ -44,7 +44,7 @@
     "address": "Davao - Cotabato Rd, Kidapawan City, Cotabato",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/kidapawanwd.webp",
     "isActive": true,
     "tagline": "Reliable water supply for Kidapawan.",
     "email": "contact@kidapawanwdunion.com"
@@ -54,7 +54,7 @@
     "address": "Obredo-Bariada Road, Bitano, Legazpi City. ",
     "phoneNum": "(+63)927 234 5678",
     "img": "images/cinnamon.webp",
-    "logo": "images/nenasLogo.webp",
+    "logo": "images/legazpiwd.webp",
     "isActive": true,
     "tagline": "Committed to Legazpi's water needs.",
     "email": "contact@legazpiwdunion.com"
@@ -64,7 +64,7 @@
     "address": "LWUA Bldg. MWSS LWUA Compound, Katipunan Ave. Diliman, Quezon City",
     "phoneNum": "(+63)927 456 7890",
     "img": "images/activeFitness.webp",
-    "logo": "images/activeLogo.webp",
+    "logo": "images/lwuawd.webp",
     "isActive": true,
     "tagline": "Advancing water services nationwide.",
     "email": "hello@lwuaunion.com"
@@ -74,7 +74,7 @@
     "address": "Magallanes St, Cebu City, 6000 Cebu",
     "phoneNum": "(+63)927 678 9012",
     "img": "images/marketVille.webp",
-    "logo": "images/marketLogo.webp",
+    "logo": "images/mcwd.webp",
     "isActive": true,
     "tagline": "Providing water for Metro Cebu.",
     "email": "info@cebuwdunion.com"
@@ -84,7 +84,7 @@
     "address": "Blk 1, Casa Subdivision, Zone 3, City of Koronadal, South Cotabato 9506",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/mkwd.webp",
     "isActive": true,
     "tagline": "Koronadal's trusted water service union.",
     "email": "info@koronadalwdunion.com"
@@ -94,7 +94,7 @@
     "address": "Bonifacio St, City of Naga, 6037 Cebu",
     "phoneNum": "(+63)927 567 8901",
     "img": "images/smartsol.webp",
-    "logo": "images/smartsolLogo.webp",
+    "logo": "images/nagawd.webp",
     "isActive": true,
     "tagline": "Serving Naga City with clean water.",
     "email": "contact@nagawdunion.com"
@@ -104,7 +104,7 @@
     "address": " Sta. Rita Agro-Industrial Park, 4418 Camarines Sur",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/piliwd.webp",
     "isActive": true,
     "tagline": "Dedicated to water services in Pili.",
     "email": "info@piliwdunion.com"
@@ -114,7 +114,7 @@
     "address": "S. Osmena St., Brgy. Sangi, Toledo City, Cebu",
     "phoneNum": "(+63)927 789 0123",
     "img": "images/angelsburger.webp",
-    "logo": "images/burgerLogo.webp",
+    "logo": "images/toledowd.webp",
     "isActive": true,
     "tagline": "Toledo City's reliable water service union.",
     "email": "info@toledowdunion.com"
