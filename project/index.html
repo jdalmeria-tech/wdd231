@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGWWAS</title>
+  <meta name="description" content="The Alliance of Government Workers in the Water Sector (AGWWAS) advocates for water workers' rights, public water access, and sustainable management in the Philippines. Learn more about their campaigns for fair labor policies, environmental protection, and quality public services. Join the movement to put people before profit and protect public water services.">
+  <meta name="author" content="Joseph Almeria">
+  <!-- social media meta -->
+  <meta property="og:title" content="AGWWAS">
+  <meta property="og:description" content="The Alliance of Government Workers in the Water Sector (AGWWAS) advocates for water workers' rights, public water access, and sustainable management in the Philippines. Learn more about their campaigns for fair labor policies, environmental protection, and quality public services. Join the movement to put people before profit and protect public water services.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://media.istockphoto.com/id/1499946423/photo/aerial-view-of-cebu-city.jpg?s=612x612&w=0&k=20&c=icFW841BX4LkKRILA_p8jOLcMYcaeMOGGA-LCisN-oM=">
+  <meta property="og:url" content="https://jdalmeria-tech.github.io/wdd231/project/index.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AGWWAS">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="styles/normalize.css" as="style">
+  <link rel="preload" href="styles/small.css" as="style">
+  <link rel="preload" href="styles/larger.css" as="style">
+  <link rel="preload" href="scripts/navigation.js" as="script">
+  <link rel="preload" href="scripts/getdates.js" as="script">
+  <link rel="preload" href="images/agwwaslogo.png" as="image">
+  <!-- css links -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- font used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  </noscript>
+  <!-- scripts -->
+  <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script> 
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/events.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/agwwaslogo.png" alt="AGWWAS logo" width="40" height="40" loading="lazy" tabindex="0">
+    <span tabindex="0">Alliance of Government Workers in the Water Sector</span>
+    <button id="myButton" aria-label="burger button menu" tabindex="0"></button>
+  </header>
+  <nav id="animateMe">
+    <ul class="menuLinks">
+      <li class="current-menu-item"><a href="#" title="Home" tabindex="0">Home</a></li>
+      <li><a href="affiliate.html" title="Affiliates" tabindex="0">Affiliates</a></li>
+      <li><a href="#" title="Join" tabindex="0">Join</a></li>
+      <li><a href="#" title="Discover" tabindex="0">Discover</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- this is for the hero image -->
+    <div>
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 63rem)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 44rem)">
+        <img src="images/hero-small.webp" alt="cebu-city-view" width="400" height="200">
+      </picture>
+      <a href="join.html" class="home-action-link" role="button" tabindex="0">Join Us</a>
+    </div>
+    <h1 tabindex="0">Home</h1>
+    <div class="intro-message">
+      <h3>Hello and Welcome!</h3>
+      <p>
+        We're AGWWAS, a trade union of water sector workers in the Philippines
+        working together to support one another, protect our rights, and ensure our communities have access to safe and reliable water.
+        Explore our site to learn about our campaigns and how you can get involved!
+      </p>
+    </div> 
+    <div class="homepage-grid">
+      <section class="events">
+        <h2 tabindex="0">Events</h2>
+        <div class="event-container">
+          <!-- populated events will be here -->
+        </div>
+      </section>
+
+      <section class="weather-a">
+        <h2 tabindex="0">Current Weather</h2>
+        <div class="weather-container">
+          <div class="current-weather">
+            <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Weather icon" tabindex="0">
+            <div class="weather-details">
+              <p class="temperature" tabindex="0"><span id="current-temp"></span>°C</p>
+              <p id="weather-desc" tabindex="0"></p>
+              <p tabindex="0">High: <span id="high"></span>°</p>
+              <p tabindex="0">Low: <span id="low"></span>°</p>
+              <p tabindex="0">Humidity: <span id="humidity"></span>%</p>
+              <p tabindex="0">Sunrise: <span id="rise"></span></p>
+              <p tabindex="0">Sunset: <span id="set"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather-b">
+        <h2 tabindex="0">Weather Forecast</h2>
+        <div class="weather-container">
+          <div class="forecast">
+            <div class="forecast-container">
+              <!-- populated forecast will be here -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="spotlights">
+        <div class="spotlight-container">
+          <!-- spotlights will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h3 tabindex="0">House of AGWWAS</h3>
+        <p tabindex="0">58 Andres Abellana Extension</p>
+        <p tabindex="0">Brgy. Guadalupe, Cebu City,</p>
+        <p tabindex="0">Philippines 6000</p>
+        <p tabindex="0">agwwas.phils@yahoo.com</p>
+        <p tabindex="0">(+63) 917 640 3932 or 915 807 1565</p>
+      </div>
+      <div class="footer-content">
+        <ul>
+         <li>
+          <a href="https://www.facebook.com/agwwas.phils" aria-label="Link to Facebook, more info about AGWWAS." tabindex="0"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+         <li>
+          <a href="https://www.yahoo.com" aria-label="Link to Yahoo, contact AGWWAS via yahoo." tabindex="0"><i class="fa-brands fa-yahoo"></i></a>
+        </li>
+         <li>
+          <a href="https://www.gmail.com" aria-label="Link to Gmail, contact AGWWAS via gmail" tabindex="0"><i class="fa-brands fa-google"></i></a>
+        </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <p tabindex="0">Powered by jdalmeria-tech</p>
+        <p tabindex="0">©<span id="currentyear"></span> AGWWAS</p>
+        <p tabindex="0"><span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
