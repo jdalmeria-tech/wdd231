@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Baguio City WD Employees Association",
+    "address": "456 Session Rd, Baguio City",
+    "phoneNum": "(+63)927 123 4567",
+    "img": "images/sephaya.webp",
+    "logo": "images/sephayaLogo.webp",
+    "isActive": true,
+    "tagline": "Delivering clean water to Baguio City.",
+    "email": "info@baguiowdunion.com"
+  },
+  {
+    "name": "Legazpi City WD Union of Regular Employees",
+    "address": "789 Rizal St, Legazpi City",
+    "phoneNum": "(+63)927 234 5678",
+    "img": "images/cinnamon.webp",
+    "logo": "images/nenasLogo.webp",
+    "isActive": true,
+    "tagline": "Committed to Legazpi's water needs.",
+    "email": "contact@legazpiwdunion.com"
+  },
+  {
+    "name": "Calumpit Water District Employees Union",
+    "address": "123 Poblacion Rd, Calumpit",
+    "phoneNum": "(+63)927 345 6789",
+    "img": "images/arratech.webp",
+    "logo": "images/arratechLogo.webp",
+    "isActive": true,
+    "tagline": "Ensuring water for every home in Calumpit.",
+    "email": "support@calumpitwdunion.com"
+  },
+  {
+    "name": "LWUA Emlpoyees Association for Progress",
+    "address": "456 Progress Ave, Quezon City",
+    "phoneNum": "(+63)927 456 7890",
+    "img": "images/activeFitness.webp",
+    "logo": "images/activeLogo.webp",
+    "isActive": true,
+    "tagline": "Advancing water services nationwide.",
+    "email": "hello@lwuaunion.com"
+  },
+  {
+    "name": "Naga City Water District Employees Union",
+    "address": "789 Peñafrancia St, Naga City",
+    "phoneNum": "(+63)927 567 8901",
+    "img": "images/smartsol.webp",
+    "logo": "images/smartsolLogo.webp",
+    "isActive": true,
+    "tagline": "Serving Naga City with clean water.",
+    "email": "contact@nagawdunion.com"
+  },
+  {
+    "name": "Metro Cebu Water District Employees Union",
+    "address": "123 Colon St, Cebu City",
+    "phoneNum": "(+63)927 678 9012",
+    "img": "images/marketVille.webp",
+    "logo": "images/marketLogo.webp",
+    "isActive": true,
+    "tagline": "Providing water for Metro Cebu.",
+    "email": "info@cebuwdunion.com"
+  },
+  {
+    "name": "Baybay City Water District Employees Association",
+    "address": "456 Baybay Blvd, Baybay City",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Clean water for Baybay City residents.",
+    "email": "support@baybaywdunion.com"
+  },
+  {
+    "name": "Pili Water District Employees Association",
+    "address": "789 Pili St, Pili",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Dedicated to water services in Pili.",
+    "email": "info@piliwdunion.com"
+  },
+  {
+    "name": "Kidapawan Water District Employees Union",
+    "address": "123 Kidapawan Rd, Kidapawan",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Reliable water supply for Kidapawan.",
+    "email": "contact@kidapawanwdunion.com"
+  },
+  {
+    "name": "General Santos City WD Employees Association",
+    "address": "456 GenSan Ave, General Santos City",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Clean water for General Santos City.",
+    "email": "support@gensanwdunion.com"
+  },
+  {
+    "name": "Metro Koronadal Employees Union",
+    "address": "789 Koronadal St, Koronadal",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Koronadal's trusted water service union.",
+    "email": "info@koronadalwdunion.com"
+  },
+  {
+    "name": "Toledo City Water District Employees Union",
+    "address": "143 Toledo Ave, Toledo City",
+    "phoneNum": "(+63)927 789 0123",
+    "img": "images/angelsburger.webp",
+    "logo": "images/burgerLogo.webp",
+    "isActive": true,
+    "tagline": "Toledo City's reliable water service union.",
+    "email": "info@toledowdunion.com"
+  }
+]

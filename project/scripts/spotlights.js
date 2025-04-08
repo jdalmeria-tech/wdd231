@@ -1,6 +1,6 @@
 async function loadSpotlights() {
     try {
-        const response = await fetch('data/members.json');
+        const response = await fetch('data/affiliates.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
