@@ -11,7 +11,7 @@
 
 :root {
   --primary-color:#0F2346;
-  --secondary-color: #8093e9;
+  --secondary-color: #2e2e2e;
   --bg-color: #F7F7F7;
   --txt-color: #3BC0BC;
   --highlight-color: #A9131A;
@@ -24,7 +24,7 @@
   --button-img-height: 2rem;
   --card-padding: 1rem;
   --card-border-radius: 8px;
-  --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   --footer-padding: 0.5rem;
   --footer-font-size: 0.8rem;
   --footer-icon-size: 2.5rem;
@@ -183,6 +183,7 @@ div.menu button img {
   width: 365px;
   height: 200px;
   border-radius: var(--card-border-radius);
+  border: solid 2px var(--primary-color);
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
