@@ -19,7 +19,6 @@ function displayMembers(members) {
       <img src="${member.img}" alt="${member.name} photo" class="member-img" tabindex="0">
       <h2 id="member-${member.id}-name" tabindex="0">${member.name}</h2>
       <p id="member-${member.id}-address" tabindex="0">${member.address}</p>
-      <a href="${member.email}" target="_blank" tabindex="0">${member.email}</a>
     `;
 
     cardsContainer.appendChild(card);
