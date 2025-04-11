@@ -535,6 +535,7 @@ div.membershipCards {
   max-width: 800px;
   text-align: center;
   box-sizing: border-box;
+  min-height: 500px;
 }
 
 #detailCards {
