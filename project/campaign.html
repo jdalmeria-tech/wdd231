@@ -38,6 +38,7 @@
   <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/campaigns.js"></script>
   <script src="scripts/usertrack.js" defer></script>
 </head>
 
@@ -58,15 +59,35 @@
   <main>
     <h1 tabindex="0">Campaigns</h1>
     <div class="campaign">
-      <div class="campaigndetails">
-        
-      </div>
-      <section class="message-track">
-        <h3>I see you buddy</h3>
-        <div class="user-track" tabindex="0">
-        <!-- message will be dynamically populated here -->
+      <div class="campaign-wrapper">
+        <div class="intro-message">
+          <p>
+            AGWWAS is committed to fighting for public water rights, fair labor conditions, and sustainable water management. Explore our key advocacies below.
+            Keep in mind that these are just two of the many campaigns we are working on.
+          </p>
         </div>
-      </section>
+        <div class="campaigndetails">
+          <h2>Campaigns & Advocacies Overview</h2>
+          <p>Explore our key campaigns that promote workers' rights, public water access, and sustainable policies.</p>
+          <table id="campaigns-table">
+            <thead>
+              <tr>
+                <th>Campaign Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JavaScript will populate this -->
+            </tbody>
+          </table>
+        </div>
+        <section class="message-track">
+          <h3>I see you buddy</h3>
+          <div class="user-track" tabindex="0">
+          <!-- message will be dynamically populated here -->
+          </div>
+        </section>
+      </div>
     </div>
   </main>
   <footer>
