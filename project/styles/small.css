@@ -637,9 +637,9 @@ div.form {
   margin: 1rem;
   padding: 1rem;
   max-width: 600px;
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   color: var(--txt-color);
-  border: 5px solid var(--secondary-color);
+  border: 5px solid var(--txt-color);
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
   font-size: 1rem;
