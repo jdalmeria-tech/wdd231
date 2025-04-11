@@ -1,39 +1,52 @@
 export const activities = [
   {
-    name: "Hiking",
-    description: "Explore scenic trails and enjoy the beauty of nature.",
-    image: "images/hiking.jpg"
+    name: "Anti-Privatization",
+    description: "AGWWAS standing up against privatization.",
+    image: "images/rally2.webp"
   },
   {
-    name: "Cycling",
-    description: "Ride through urban or rural areas for exercise and fun.",
-    image: "images/cycling.jpg"
+    name: "Water Workers' Rights",
+    description: "Members making management aware of workers' salary concerns.",
+    image: "images/rally6.webp"
   },
   {
-    name: "Swimming",
-    description: "Dive into pools or open water for relaxation and fitness.",
-    image: "images/swimming.jpg"
+    name: "People Over Profit",
+    description: "Chris, a member, signs documentation emphasizing the importance of service to people.",
+    image: "images/image5.webp"
   },
   {
-    name: "Yoga",
-    description: "Practice mindfulness and improve flexibility with yoga.",
-    image: "images/yoga.jpg"
+    name: "Environmental Protection",
+    description: "AGWWAS members participating in a tree-planting activity.",
+    image: "images/treeplanting.webp"
   },
   {
-    name: "Photography",
-    description: "Capture stunning moments and landscapes with your camera.",
-    image: "images/photography.jpg"
+    name: "Quality Public Service",
+    description: "AGWWAS members taking a picture after a seminar on improving public service.",
+    image: "images/image2.webp"
   },
   {
-    name: "Cooking",
-    description: "Experiment with recipes and create delicious meals.",
-    image: "images/cooking.jpg"
+    name: "Anti-Privatization",
+    description: "Boss Vic speaking on behalf of the members against privatization.",
+    image: "images/rally3.webp"
   },
   {
-    name: "Gardening",
-    description: "Grow plants and flowers to beautify your surroundings.",
-    image: "images/gardening.jpg"
+    name: "Water Workers' Rights",
+    description: "The union discussing solutions and plans for workers' rights.",
+    image: "images/image6.webp"
+  },
+  {
+    name: "Quality Public Service",
+    description: "AGWWAS holding a meeting to improve the quality of public service.",
+    image: "images/image3.webp"
+  },
+  {
+    name: "People Over Profit",
+    description: "Members taking time to relax and have fun, because service is better with joy.",
+    image: "images/image1.webp"
+  },
+  {
+    name: "Quality Public Service",
+    description: "AGWWAS continuing to build relationships with affiliates.",
+    image: "images/image7.webp"
   }
 ];
-
-// to be edited (:)
