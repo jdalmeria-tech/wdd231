@@ -509,3 +509,253 @@ div picture img {
 .homepage-grid .spotlights {
   grid-column: span 1; 
 }
+/* join page */
+div.joinPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+div.form {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+div.membershipCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#memberCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.membershipCards h2 {
+  margin-bottom: 1rem;
+}
+
+/* form styling */
+form.designOne {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+form.designOne label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+form.designOne input,
+form.designOne select,
+form.designOne textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form.designOne input:focus,
+form.designOne select:focus,
+form.designOne textarea:focus {
+  outline: 2px solid var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.designOne input:required {
+  border-left: solid 6px var(--highlight-color);
+}
+
+form.designOne textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form.designOne input[type="submit"] {
+  background-color: var(--highlight-color);
+  color: var(--bg-color);
+  font-weight: bold;
+  cursor: pointer;
+  border: 5px solid var(--bg-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form.designOne input[type="submit"]:hover {
+  background-color: var(--bg-color);
+  color: var(--highlight-color);
+  border: 5px solid var(--highlight-color);
+
+}
+
+/* align form container */
+div.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.form h2 {
+  margin-bottom: 1rem; /* Add spacing below the title */
+}
+
+/* thankyou page results below this */
+#thankyouPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 600px;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  border: 5px solid var(--secondary-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* membership div */
+.membershipCards {
+  padding: 1rem;
+  animation: slideInFromRight 1.2s ease-out; /* Apply slide-in animation */
+}
+
+/* membership cards styling */
+.membership-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 5px solid var(--txt-color); /* Initial border color */
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  text-align: center;
+  animation: borderColorAnimation 2s infinite alternate; /* Apply animation */
+}
+
+.membership-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.membership-card button:hover {
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+
+/* Keyframes for border color animation */
+@keyframes borderColorAnimation {
+  0% {
+    border-color: var(--txt-color);
+  }
+  50% {
+    border-color: var(--secondary-color);
+  }
+  100% {
+    border-color: var(--primary-color);
+  }
+}
+
+/* Keyframes for slide-in animation from the top */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal styling */
+dialog#mydialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: var(--card-box-shadow);
+  padding: 1rem;
+  max-width: 400px;
+  width: 90%;
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left; /* Ensure all text inside the modal is left-aligned */
+}
+
+dialog#mydialog div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dialog#mydialog h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+dialog#mydialog p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+dialog#mydialog ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+dialog#mydialog button {
+  background-color: var(--bg-color);
+  color: var(--highlight-color);
+  border: 3px solid var(--bg-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+dialog#mydialog button:hover {
+  background-color: var(--bg-color);
+  color: var(--highlight-color);
+  border: 3px solid var(--highlight-color);
+  box-shadow: 0 0 5px var(--bg-color);
+}
+/* Backdrop styling */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); 
+}
