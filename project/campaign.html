@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGWWAS: Campaigns</title>
+  <meta name="description" content="Join AGWWAS in advocating for water workers' rights and public water services. Learn how you can support our mission for fair and sustainable water access.">
+  <meta name="author" content="Joseph Almeria">
+  <!-- social media meta -->
+  <meta property="og:title" content="AGWWAS">
+  <meta property="og:description" content="Join AGWWAS in advocating for water workers' rights and public water services. Learn how you can support our mission for fair and sustainable water access.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://media.istockphoto.com/id/481061854/photo/magic-hour-bridge.jpg?s=612x612&w=0&k=20&c=WkYUqZf8m90nRjLnUWI2JEc0veKd7J-75WZZFpYThy0=">
+  <meta property="og:url" content="https://jdalmeria-tech.github.io/wdd231/project/joinus.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AGWWAS">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="styles/normalize.css" as="style">
+  <link rel="preload" href="styles/small.css" as="style">
+  <link rel="preload" href="styles/larger.css" as="style">
+  <link rel="preload" href="scripts/navigation.js" as="script">
+  <link rel="preload" href="scripts/getdates.js" as="script">
+  <link rel="preload" href="images/agwwaslogo.png" as="image">
+  <!-- css links -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+  <!-- font used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  </noscript>
+  <!-- scripts -->
+  <script src="https://kit.fontawesome.com/4ba7130054.js" crossorigin="anonymous" async></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/usertrack.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/agwwaslogo.png" alt="AGWWAS logo" width="40" height="40" loading="lazy" tabindex="0">
+    <span tabindex="0">Alliance of Government Workers in the Water Sector</span>
+    <button id="myButton" aria-label="burger button menu" tabindex="0"></button>
+  </header>
+  <nav id="animateMe">
+    <ul class="menuLinks">
+      <li><a href="index.html" title="Home" tabindex="0">Home</a></li>
+      <li><a href="affiliate.html" title="Affiliates" tabindex="0">Affiliates</a></li>
+      <li><a href="joinus.html" title="Join Us" tabindex="0">Join Us</a></li>
+      <li class="current-menu-item"><a href="#" title="Campaigns" tabindex="0">Campaigns</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1 tabindex="0">Campaigns</h1>
+    <div class="campaign">
+      <div class="membershipCards">
+        <h2 tabindex="0">Get to know AGWWAS</h2>
+        <div id="detailCards">
+          <!-- Membership cards will be dynamically loaded here -->
+        </div>
+        <dialog id="mydialog">
+          <div>
+            <h3>Sample Title</h3>
+            <button>X</button>
+          </div>
+          <p></p>
+        </dialog>
+      </div>
+      <section class="message-track">
+        <h3>I see you buddy 👁️‿👁️</h3>
+        <div class="user-track" tabindex="0">
+        <!-- message will be dynamically populated here -->
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h3 tabindex="0">House of AGWWAS</h3>
+        <p tabindex="0">58 Andres Abellana Extension</p>
+        <p tabindex="0">Brgy. Guadalupe, Cebu City,</p>
+        <p tabindex="0">Philippines 6000</p>
+        <p tabindex="0">agwwas.phils@yahoo.com</p>
+        <p tabindex="0">(+63) 917 640 3932 or 915 807 1565</p>
+      </div>
+      <div class="footer-content">
+        <ul>
+         <li>
+          <a href="https://www.facebook.com/agwwas.phils" aria-label="Link to Facebook, more info about AGWWAS." tabindex="0"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+         <li>
+          <a href="https://www.yahoo.com" aria-label="Link to Yahoo, contact AGWWAS via yahoo." tabindex="0"><i class="fa-brands fa-yahoo"></i></a>
+        </li>
+         <li>
+          <a href="https://www.gmail.com" aria-label="Link to Gmail, contact AGWWAS via gmail" tabindex="0"><i class="fa-brands fa-google"></i></a>
+        </li>
+        </ul>
+      </div>
+      <div class="footer-content">
+        <p tabindex="0">Powered by jdalmeria-tech</p>
+        <p tabindex="0">©<span id="currentyear"></span> AGWWAS</p>
+        <p tabindex="0"><span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+  <!-- change this to vision mission and about us -->
+  <script src="scripts/detailsInfo.js" type="module"></script> 
+</body>
+</html>
