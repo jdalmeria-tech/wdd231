@@ -1,6 +1,6 @@
-import { memberLevels } from "../data/membershipLvl.js"; // Ensure the correct file extension is included
+import { memberLevels } from "../data/membershipLvl.js";
 
-// Reference for the div where membership cards will be displayed
+// Reference for the div where details - cards will be displayed
 const memberCards = document.querySelector('#memberCards');
 // Reference to the dialog element
 const mydialog = document.querySelector('#mydialog');
@@ -11,10 +11,10 @@ const myclose = document.querySelector('#mydialog button');
 // Close the modal when the close button is clicked
 myclose.addEventListener('click', () => mydialog.close());
 
-// Function to display membership levels
+// Function to display details
 function displayMembershipLevels(data) {
   data.forEach(level => {
-    // Create a container for each membership level
+    // Create a container for each details
     const card = document.createElement('div');
     card.classList.add('membership-card');
     card.style.display = 'flex';
@@ -27,7 +27,7 @@ function displayMembershipLevels(data) {
     card.style.boxShadow = 'var(--card-box-shadow)';
     card.style.textAlign = 'center';
 
-    // Add membership level name
+    // Add details name
     const levelName = document.createElement('h3');
     levelName.textContent = level.level;
     levelName.style.color = 'var(--secondary-color)';
@@ -45,19 +45,18 @@ function displayMembershipLevels(data) {
     learnMoreButton.style.cursor = 'pointer';
     learnMoreButton.style.marginTop = '0.5rem';
 
-    // Add event listener to open modal with membership details
+    // Add event listener to open modal with AGWWAS details
     learnMoreButton.addEventListener('click', () => {
       mytitle.textContent = level.level;
       myinfo.innerHTML = `
         
-        <p><strong>Benefits:</strong></p>
+        
         <ul>
           ${Object.keys(level)
             .filter(key => key.startsWith('benefit'))
             .map(key => `<li>${level[key]}</li>`)
             .join('')}
         </ul>
-        <p><strong>Cost:</strong> ${level.cost}</p>
       `;
       mydialog.showModal();
     });
@@ -67,6 +66,6 @@ function displayMembershipLevels(data) {
   });
 }
 
-// Display membership levels
+// Display AGWWAS details
 displayMembershipLevels(memberLevels);
 
