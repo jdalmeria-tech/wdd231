@@ -537,7 +537,7 @@ div.membershipCards {
   box-sizing: border-box;
 }
 
-#memberCards {
+#detailCards {
   display: flex;
   flex-direction: column;
   gap: 1rem;

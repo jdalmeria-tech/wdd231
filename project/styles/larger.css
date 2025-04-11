@@ -19,7 +19,7 @@
     grid-column: span 1;
   }
 
-  #memberCards {
+  #detailCards {
     grid-template-columns: repeat(2, 1fr);
   }
 }

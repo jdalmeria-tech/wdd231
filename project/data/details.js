@@ -1,6 +1,6 @@
- export const memberLevels = [
+ export const details = [
   {
-    "level": "Our History",
+    "level": "About Us",
     "benefit1": "The Alliance of Government Workers in the Water Sector (AGWWAS) was founded with the mission to protect the rights of workers in water districts and advocate for public access to clean and affordable water.",
     "benefit2": "Through the years, AGWWAS has played a crucial role in opposing privatization, promoting fair labor conditions, and engaging with communities to push for sustainable water management.",
     "benefit3":"Our commitment remains unwavering—ensuring that water services prioritize people over profit. Join us in our advocacy and stand with workers who keep water flowing for our communities.",

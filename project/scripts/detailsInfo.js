@@ -1,7 +1,7 @@
-import { memberLevels } from "../data/membershipLvl.js";
+import { details } from "../data/details.js";
 
 // Reference for the div where details - cards will be displayed
-const memberCards = document.querySelector('#memberCards');
+const memberCards = document.querySelector('#detailCards');
 // Reference to the dialog element
 const mydialog = document.querySelector('#mydialog');
 const mytitle = document.querySelector('#mydialog h3');
@@ -67,5 +67,5 @@ function displayMembershipLevels(data) {
 }
 
 // Display AGWWAS details
-displayMembershipLevels(memberLevels);
+displayMembershipLevels(details);
 
