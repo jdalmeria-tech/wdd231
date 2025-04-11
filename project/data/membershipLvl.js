@@ -1,4 +1,4 @@
-export const memberLevels = [
+ export const memberLevels = [
   {
     "level": "Non Profit Membership",
     "benefit1": "A nice plaque with the Barangay Captain's stamp",

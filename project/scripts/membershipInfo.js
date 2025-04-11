@@ -30,7 +30,7 @@ function displayMembershipLevels(data) {
     // Add membership level name
     const levelName = document.createElement('h3');
     levelName.textContent = level.level;
-    levelName.style.color = 'var(--txt-color)';
+    levelName.style.color = 'var(--secondary-color)';
     card.appendChild(levelName);
 
     // Add "Learn More" button
