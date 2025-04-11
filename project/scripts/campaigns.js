@@ -34,22 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
       tableBody.appendChild(row);
   });
 });
-
-// remove br element on smaller screens
-document.addEventListener('DOMContentLoaded', () => {
-    const removeBrOnSmallScreens = () => {
-      if (window.innerWidth <= 768) {
-        const campaignsHeroP = document.querySelector('.campaigns-hero p');
-        const brElement = campaignsHeroP.querySelector('br');
-        if (brElement) {
-          brElement.remove();
-        }
-      }
-    };
-  
-    // Run the function on initial load
-    removeBrOnSmallScreens();
-  
-    // Run the function on window resize
-    window.addEventListener('resize', removeBrOnSmallScreens);
-  });
