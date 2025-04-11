@@ -807,7 +807,7 @@ dialog::backdrop {
 
 .campaigndetails {
   overflow-x: auto;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 #campaigns-table {
@@ -854,4 +854,8 @@ dialog::backdrop {
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
+}
+/* message-track */
+.message-track {
+  min-height: 55px;
 }
