@@ -22,6 +22,10 @@
   #detailCards {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* campaign page */
+  .campaigndetails {
+    min-height: 300px;
+  }
 }
 
 @media only screen and (min-width: 63rem) {
