@@ -2,6 +2,26 @@
   #cards.grid {
     grid-template-columns: repeat(2, 1fr); /* two columns for medium screens */
   }
+  /* join page */
+  div.joinPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem;
+  }
+
+  div.form {
+    grid-column: span 1;
+  }
+
+  div.membershipCards {
+    grid-column: span 1;
+  }
+
+  #memberCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 63rem) {
