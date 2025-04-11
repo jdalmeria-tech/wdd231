@@ -75,39 +75,35 @@
       <div class="form">
         <form method="GET" action="thankyou.html" class="designOne">
           <h2 tabindex="0">Make Your Voice Be Heard!</h2>
+        
           <label>First Name 
             <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
           </label>
+        
           <label>Last Name 
             <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
           </label>
-          <label>Organizational Title 
-            <input type="text" name="org-title" title="Your Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
-          </label>
+        
           <label>Email 
             <input type="email" name="email" required placeholder="example@email.com" title="Your Email Address" autocomplete="email">
           </label>
+        
           <label>Mobile Phone 
-            <input type="tel" name="phone" required title="Your Mobile Phone Number" autocomplete="tel">
+            <input type="tel" name="phone" title="Your Mobile Phone Number" autocomplete="tel">
           </label>
-          <label>Business/Organization Name 
-            <input type="text" name="organization" required title="Your Business/Organization Name" autocomplete="organization">
+        
+          <label>Subject
+            <input type="text" name="subject" required title="Subject of your message">
           </label>
-          <label>Membership Level
-            <select name="membership-level" required>
-              <option value="">Select Membership Level</option>
-              <option value="NP Membership">NP Membership (No Fee)</option>
-              <option value="Bronze Membership">Bronze Membership</option>
-              <option value="Silver Membership">Silver Membership</option>
-              <option value="Gold Membership">Gold Membership</option>
-            </select>
+        
+          <label>Message
+            <textarea name="message" required placeholder="Write your message here..." title="Your message to AGWWAS"></textarea>
           </label>
-          <label>Business/Organization Description
-            <textarea name="org-description" title="Describe Your Business/Organization"></textarea>
-          </label>
+        
           <input type="hidden" name="timestamp" id="timestamp" value="">
           <input type="submit" value="Send My Message">
         </form>
+        
       </div>
     </div>
   </main>

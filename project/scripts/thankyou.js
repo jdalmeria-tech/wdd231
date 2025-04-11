@@ -1,14 +1,15 @@
-// display the results from the form application
-const myInfo = new URLSearchParams(window.location.search);
-console.log(myInfo);
+// Get form data from the URL
+const formData = new URLSearchParams(window.location.search);
 
-console.log(myInfo.get('first'));
-
+// Insert personalized thank-you message
 document.querySelector('#thankyouPage').innerHTML = `
-<p><strong>Application from:</strong> ${myInfo.get('first')} ${myInfo.get('last')}</p>
-<p><strong>Business Name:</strong> ${myInfo.get('organization')}</p>
-<p><strong>Your phone:</strong> ${myInfo.get('phone')}</p>
-<p><strong>Your email:</strong> ${myInfo.get('email')}</p>
-<p><strong>Form was submitted on:</strong> ${new Date().toLocaleString()}</p>`; //timestamp
+  <p><strong>Message from:</strong> ${formData.get('first')} ${formData.get('last')}</p>
+  <p><strong>Phone:</strong> ${formData.get('phone')}</p>
+  <p><strong>Email:</strong> ${formData.get('email')}</p>
+  <p><strong>Subject:</strong> ${formData.get('subject')}</p>
+  <p><strong>Message:</strong> ${formData.get('message')}</p>
+  <p><strong>Form was submitted on:</strong> ${new Date().toLocaleString()}</p>
+`;
+
 
 
