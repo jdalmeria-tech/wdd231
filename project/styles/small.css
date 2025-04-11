@@ -762,6 +762,9 @@ dialog::backdrop {
 
 /* Campaign page */
 /* Table styling for campaigns */
+.campaign {
+  min-height: 670px;
+}
 #campaigns-table {
   width: 100%;
   border-collapse: collapse;
